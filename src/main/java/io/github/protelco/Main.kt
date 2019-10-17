@@ -5,7 +5,7 @@ import kotlin.random.Random
 
 fun main() {
 
-    // 1. get billId and paymentId
+    // 1. Generate a random bill, of UD type having a valid billId and paymentId
     LogUtils.beginSection("1-CREATE RANDOM BILL")
 
     val caseNumber = Random(System.currentTimeMillis()).nextInt(1366923)
@@ -15,6 +15,10 @@ fun main() {
     LogUtils.log("generated bill data")
     LogUtils.log(validatedBill.toString())
 
+    /**
+     * if the generated bill is valid, meaning its billId and paymentId is valid, then we proceed.
+     * Note : Generating bills is not part of the project and has been added just for testing purposes
+     */
     if (validatedBill != null &&
             IrBill.validateBillId(randomBill.billId) &&
             IrBill.validatePaymentId(randomBill.billId, randomBill.paymentId)) {
@@ -28,14 +32,14 @@ fun main() {
         LogUtils.log("Transaction id : $transactionId")
 
         // 3. get UUID from eways server and save in log file
-        val getProductResult = GetUUIDSoapWrapper().call(transactionId.toString())
+        val getProductResult = GetProductSoapWrapper().call(transactionId.toString())
         LogUtils.log(getProductResult.toString())
 
         // 4. call request bill to pay the bill and save the response in log file
+        val requestBillResult = RequestBillSoapWrapper().call()
 
         // 5. read the log file and call get status to show the result
 
-        // 6. call
     } else {
         LogUtils.beginSection("Error happened")
         LogUtils.log("random bill validation failed")

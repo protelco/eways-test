@@ -32,6 +32,7 @@ dependencies {
     implementation "org.controlsfx:controlsfx:8.40.14"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation 'io.github.the724:irbill:1.0.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
 }
 
 //This lets the shadow plugin know which is the main class

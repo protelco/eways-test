@@ -6,35 +6,17 @@ import org.ksoap2.serialization.SoapSerializationEnvelope
 import org.ksoap2.transport.HttpTransportSE
 import org.w3c.dom.NodeList
 import java.io.ByteArrayInputStream
-import java.io.FileInputStream
 import java.nio.charset.Charset
-import java.util.*
 import javax.xml.parsers.DocumentBuilderFactory
 
-
-class GetUUIDSoapWrapper {
+class GetProductSoapWrapper : SoapWrapper() {
 
     companion object {
-        private val properties = Properties()
-        private val inputStream = FileInputStream("local.properties");
-        private val configs : List<String> = configs()
-        private val URL = configs[0]
-        private val NAMESPACE = configs[1]
-        private val METHOD_NAME = configs[2]
-        private val SOAP_ACTION = configs[3]
-        private val USER_NAME = configs[4]
-
-        private fun configs(): List<String> {
-            properties.load(inputStream)
-            val list = mutableListOf<String>()
-            list.add(properties.getProperty("url"))
-            list.add(properties.getProperty("nameSpace"))
-            list.add(properties.getProperty("methodName"))
-            list.add(properties.getProperty("soapAction"))
-            list.add(properties.getProperty("userName"))
-
-            return list
-        }
+        private val URL = configsList[0].url
+        private val NAMESPACE = configsList[0].nameSpace
+        private val METHOD_NAME = configsList[0].methodName
+        private val SOAP_ACTION = configsList[0].soapAction
+        private val USER_NAME = configsList[0].userName
     }
 
     fun call(transactionId: String): GetProductResult {
