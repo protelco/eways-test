@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Eways>
+	<Requirements>
+		<Requirement ID="CID" Type="ID">Eways/Products/Operator/PINS/Card/CID</Requirement>
+		<Requirement ID="email" Optional="1" Type="Email" />
+		<Requirement ID="phone" Type="phone" />
+		<Requirement ID="count" Type="Number" min="1" max="5" />
+		<Requirement ID="Price" Type="PinType" />
+		<Requirement ID="Bank" Type="ID"
+			xmlns="Eways/Banks/Gateway/GID" />
+			<Requirement ID="UID" Type="UID">13H1_15b48</Requirement>
+			<Requirement ID="UUID" Type="UUID">dbba2769-a791-4f4b-a6ee-0afeffbe810d</Requirement>
+			<Requirement ID="TransactionID" Type="ID">1200836</Requirement>
+			<Requirement ID="callback" Type="URL" />
+		</Requirements>
+		<Products>
+			<Operator OID="MTN" Logo="http://core.eways.ir/CoreImages/Operators/MTN.jpg">
+				<Name language="fa-IR">ایرانسل</Name>
+				<Name language="en-US">Irancell</Name>
+				<PINs>
+					<PIN Price="19700" available="1" isWholeSale="0">
+						<CID>1</CID>
+						<PersianTitle>ایرانسل 2000 تومانی</PersianTitle>
+						<EnglishTitle>Irancell 20000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="49250" available="1" isWholeSale="0">
+						<CID>2</CID>
+						<PersianTitle>ایرانسل 5000 تومانی</PersianTitle>
+						<EnglishTitle>Irancell 50000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="98500" available="1" isWholeSale="0">
+						<CID>3</CID>
+						<PersianTitle>ایرانسل 10000 تومانی</PersianTitle>
+						<EnglishTitle>Irancell 100000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="197000" available="1" isWholeSale="0">
+						<CID>12</CID>
+						<PersianTitle>ایرانسل 20000 تومانی</PersianTitle>
+						<EnglishTitle>Irancell 200000 Rial</EnglishTitle>
+					</PIN>
+				</PINs>
+			</Operator>
+			<Operator OID="TMTN" Logo="http://core.eways.ir/CoreImages/Operators/MTN.jpg">
+				<Name language="fa-IR">شارژ مستقیم ایرانسل</Name>
+				<Name language="en-US">Irancell TopUp</Name>
+				<PINs>
+					<PIN Price="0.985" available="1" isWholeSale="0">
+						<CID>40</CID>
+						<PersianTitle>شارژ مستقیم ایرانسل</PersianTitle>
+						<EnglishTitle>Irancell Topup</EnglishTitle>
+					</PIN>
+					<PIN Price="0.985" available="1" isWholeSale="0">
+						<CID>41</CID>
+						<PersianTitle>شارژ شگفت انگیز ایرانسل</PersianTitle>
+						<EnglishTitle>Irancell Wonderful Topup Charge</EnglishTitle>
+					</PIN>
+					<PIN Price="0.985" available="1" isWholeSale="0">
+						<CID>44</CID>
+						<PersianTitle>قبض (شارژ) دائمی ایرانسل</PersianTitle>
+						<EnglishTitle>Irancell Topup Postpaid</EnglishTitle>
+					</PIN>
+					<PIN Price="0.985" available="1" isWholeSale="0">
+						<CID>45</CID>
+						<PersianTitle>بسته اینترنت ایرانسل</PersianTitle>
+						<EnglishTitle>Irancell 3G TopUp</EnglishTitle>
+					</PIN>
+					<PIN Price="0.985" available="1">
+						<CID>33</CID>
+						<PersianTitle>بسته اینترنت ایرانسل</PersianTitle>
+						<EnglishTitle>Irancell Internet Package</EnglishTitle>
+						<SimCard SID="3" SIMCardTypeName="TDLTEاعتباري">
+							<GROUP GID="54" GroupName="یکساله">
+								<PACKAGE PID="2602" PackageName="365 روزه 60 با 60(2-7صبح)گیگ اعتباری TDD" Price="1145000" PricePaid="1248050" Sort="0" />
+								<PACKAGE PID="2596" PackageName="365 روزه 120 با 120(2-7صبح)گیگ اعتباری TDD" Price="2025000" PricePaid="2207250" Sort="0" />
+								<PACKAGE PID="2598" PackageName="365 روزه 180 با 180(2-7صبح)گیگ اعتباری TDD" Price="2770000" PricePaid="3019300" Sort="0" />
+								<PACKAGE PID="2600" PackageName="365 روزه 360 با 360(2-7صبح)گیگ اعتباری TDD" Price="4950000" PricePaid="5395500" Sort="0" />
+							</GROUP>
+							<GROUP GID="10" GroupName="6ماهه">
+								<PACKAGE PID="2542" PackageName="180 روزه 30 با 30(2-7صبح)گیگ اعتباری TDD" Price="650000" PricePaid="708500" Sort="1" />
+								<PACKAGE PID="2550" PackageName="180 روزه 60 با 60(2-7صبح)گیگ اعتباری TDD" Price="995000" PricePaid="1084550" Sort="1" />
+								<PACKAGE PID="2552" PackageName="180 روزه 90 با 90(2-7صبح)گیگ اعتباری TDD" Price="1490000" PricePaid="1624100" Sort="1" />
+								<PACKAGE PID="2534" PackageName="180 روزه 120 با 120(2-7صبح)گیگ اعتباری TDD" Price="1750000" PricePaid="1907500" Sort="1" />
+								<PACKAGE PID="2538" PackageName="180 روزه 180 با 180(2-7صبح)گیگ اعتباری TDD" Price="2470000" PricePaid="2692300" Sort="1" />
+								<PACKAGE PID="2540" PackageName="180 روزه 240 با 240(2-7صبح)گیگ اعتباری TDD" Price="3190000" PricePaid="3477100" Sort="1" />
+							</GROUP>
+							<GROUP GID="9" GroupName="3ماهه">
+								<PACKAGE PID="2514" PackageName="90 روزه 18 با 18(2-7صبح)گیگ اعتباری TDD" Price="425000" PricePaid="463250" Sort="3" />
+								<PACKAGE PID="2520" PackageName="90 روزه 24 با 24(2-7صبح) گیگ اعتباری TDD" Price="505000" PricePaid="550450" Sort="3" />
+								<PACKAGE PID="2526" PackageName="90 روزه 30 با 30(2-7صبح)گیگ اعتباری TDD" Price="565000" PricePaid="615850" Sort="3" />
+								<PACKAGE PID="2528" PackageName="90 روزه 40 با 40(2-7صبح) گیگ اعتباری TDD" Price="655000" PricePaid="713950" Sort="3" />
+								<PACKAGE PID="2530" PackageName="90 روزه 60 با 60(2-7صبح) گیگ اعتباری TDD" Price="865000" PricePaid="942850" Sort="3" />
+								<PACKAGE PID="2512" PackageName="90 روزه 120 با 120(2-7صبح)گیگ اعتباری TDD" Price="1600000" PricePaid="1744000" Sort="3" />
+							</GROUP>
+							<GROUP GID="110" GroupName="ماهانه نامحدود">
+								<PACKAGE PID="2679" PackageName="2 مگ نامحدود 30 روزه" Price="380000" PricePaid="414200" Sort="5" />
+								<PACKAGE PID="2681" PackageName="4 مگ نامحدود 30 روزه" Price="480000" PricePaid="523200" Sort="5" />
+								<PACKAGE PID="2683" PackageName="8 مگ نامحدود 30 روزه" Price="660000" PricePaid="719400" Sort="5" />
+							</GROUP>
+							<GROUP GID="3" GroupName="ماهانه">
+								<PACKAGE PID="2664" PackageName="30 روزه 6 با 6(2-7صبح) گیگ اعتباری TDD" Price="200000" PricePaid="218000" Sort="6" />
+								<PACKAGE PID="2794" PackageName="100 گیگ (فقط 2 تا 7 صبح) اینترنت دائمی 30 روزه" Price="200000" PricePaid="218000" Sort="6" />
+								<PACKAGE PID="2674" PackageName="30 روزه 8 با 8(2-7صبح) گیگ اعتباری TDD" Price="235000" PricePaid="256150" Sort="6" />
+								<PACKAGE PID="2608" PackageName="30 روزه 10 با 10(2-7صبح) گیگ اعتباری TDD" Price="265000" PricePaid="288850" Sort="6" />
+								<PACKAGE PID="2622" PackageName="30 روزه 14 با 14(2-7صبح) گیگ اعتباری TDD" Price="320000" PricePaid="348800" Sort="6" />
+								<PACKAGE PID="2625" PackageName="30 روزه 18 با 18(2-7صبح) گیگ اعتباری TDD" Price="370000" PricePaid="403300" Sort="6" />
+								<PACKAGE PID="2633" PackageName="30 روزه 22با 22(2-7صبح) گیگ اعتباری TDD" Price="415000" PricePaid="452350" Sort="6" />
+								<PACKAGE PID="2639" PackageName="30 روزه 30 با 30(2-7صبح) گیگ اعتباری TDD" Price="490000" PricePaid="534100" Sort="6" />
+								<PACKAGE PID="2648" PackageName="30 روزه 40 با 40(2-7صبح) گیگ اعتباری TDD" Price="570000" PricePaid="621300" Sort="6" />
+							</GROUP>
+							<GROUP GID="2" GroupName="هفتگی">
+								<PACKAGE PID="2769" PackageName="بسته هفتگی 7 گیگ اعتباریTDD" Price="185000" PricePaid="201650" Sort="10" />
+								<PACKAGE PID="2770" PackageName="بسته هفتگی 10 گیگ اعتباریTDD" Price="250000" PricePaid="272500" Sort="10" />
+								<PACKAGE PID="2771" PackageName="بسته هفتگی 12 گیگ اعتباریTDD" Price="300000" PricePaid="327000" Sort="10" />
+							</GROUP>
+						</SimCard>
+						<SimCard SID="9" SIMCardTypeName="TDLTEدائمي">
+							<GROUP GID="54" GroupName="یکساله">
+								<PACKAGE PID="2603" PackageName="365 روزه 60 با 60(2-7صبح)گیگ دایمی TDD" Price="1145000" PricePaid="1248050" Sort="0" />
+								<PACKAGE PID="2597" PackageName="365 روزه 120 با 120(2-7صبح)گیگ دایمی TDD" Price="2025000" PricePaid="2207250" Sort="0" />
+								<PACKAGE PID="2599" PackageName="365 روزه 180 با 180(2-7صبح)گیگ دایمی TDD" Price="2770000" PricePaid="3019300" Sort="0" />
+								<PACKAGE PID="2601" PackageName="365 روزه 360 با 360(2-7صبح)گیگ دایمی TDD" Price="4950000" PricePaid="5395500" Sort="0" />
+							</GROUP>
+							<GROUP GID="10" GroupName="6ماهه">
+								<PACKAGE PID="2543" PackageName="180 روزه 30 با 30(2-7صبح)گیگ دایمی TDD" Price="650000" PricePaid="708500" Sort="1" />
+								<PACKAGE PID="2551" PackageName="180 روزه 60 با 60(2-7صبح)گیگ دایمی TDD" Price="995000" PricePaid="1084550" Sort="1" />
+								<PACKAGE PID="2553" PackageName="180 روزه 90 با 90(2-7صبح)گیگ دایمی TDD" Price="1490000" PricePaid="1624100" Sort="1" />
+								<PACKAGE PID="2535" PackageName="180 روزه 120 با 120(2-7صبح)گیگ دایمی TDD" Price="1750000" PricePaid="1907500" Sort="1" />
+								<PACKAGE PID="2539" PackageName="180 روزه 180 با 180(2-7صبح)گیگ دایمی TDD" Price="2470000" PricePaid="2692300" Sort="1" />
+								<PACKAGE PID="2541" PackageName="180 روزه 240 با 240(2-7صبح)گیگ دایمی TDD" Price="3190000" PricePaid="3477100" Sort="1" />
+							</GROUP>
+							<GROUP GID="9" GroupName="3ماهه">
+								<PACKAGE PID="2515" PackageName="90 روزه 18 با 18(2-7صبح)گیگ دایمی TDD" Price="425000" PricePaid="463250" Sort="3" />
+								<PACKAGE PID="2521" PackageName="90 روزه 24 با 24(2-7صبح) گیگ دایمی TDD" Price="505000" PricePaid="550450" Sort="3" />
+								<PACKAGE PID="2527" PackageName="90 روزه 30 با 30(2-7صبح)گیگ دایمی TDD" Price="565000" PricePaid="615850" Sort="3" />
+								<PACKAGE PID="2529" PackageName="90 روزه 40 با 40(2-7صبح) گیگ دایمی TDD" Price="655000" PricePaid="713950" Sort="3" />
+								<PACKAGE PID="2531" PackageName="90 روزه 60 با 60(2-7صبح) گیگ دایمی TDD" Price="865000" PricePaid="942850" Sort="3" />
+								<PACKAGE PID="2513" PackageName="90 روزه 120 با 120(2-7صبح)گیگ دایمی TDD" Price="1600000" PricePaid="1744000" Sort="3" />
+							</GROUP>
+							<GROUP GID="110" GroupName="ماهانه نامحدود">
+								<PACKAGE PID="2678" PackageName="2 مگ نامحدود 30 روزه" Price="380000" PricePaid="414200" Sort="5" />
+								<PACKAGE PID="2680" PackageName="4 مگ نامحدود 30 روزه" Price="480000" PricePaid="523200" Sort="5" />
+								<PACKAGE PID="2682" PackageName="8 مگ نامحدود 30 روزه" Price="660000" PricePaid="719400" Sort="5" />
+							</GROUP>
+							<GROUP GID="3" GroupName="ماهانه">
+								<PACKAGE PID="2665" PackageName="30 روزه 6 با 6(2-7صبح) گیگ دایمی TDD" Price="200000" PricePaid="218000" Sort="6" />
+								<PACKAGE PID="2793" PackageName="100 گیگ (فقط 2 تا 7 صبح) اینترنت دائمی 30 روزه" Price="200000" PricePaid="218000" Sort="6" />
+								<PACKAGE PID="2675" PackageName="30 روزه 8 با 8(2-7صبح) گیگ دایمی TDD" Price="235000" PricePaid="256150" Sort="6" />
+								<PACKAGE PID="2609" PackageName="30 روزه 10 با 10(2-7صبح) گیگ دایمی TDD" Price="265000" PricePaid="288850" Sort="6" />
+								<PACKAGE PID="2623" PackageName="30 روزه 14 با 14(2-7صبح) گیگ دایمی TDD" Price="320000" PricePaid="348800" Sort="6" />
+								<PACKAGE PID="2626" PackageName="30 روزه 18 با 18(2-7صبح) گیگ دایمی TDD" Price="370000" PricePaid="403300" Sort="6" />
+								<PACKAGE PID="2634" PackageName="30 روزه 22با 22(2-7صبح) گیگ دایمی TDD" Price="415000" PricePaid="452350" Sort="6" />
+								<PACKAGE PID="2640" PackageName="30 روزه 30 با 30(2-7صبح) گیگ دایمی TDD" Price="490000" PricePaid="534100" Sort="6" />
+								<PACKAGE PID="2649" PackageName="30 روزه 40 با 40(2-7صبح) گیگ دایمی TDD" Price="570000" PricePaid="621300" Sort="6" />
+							</GROUP>
+							<GROUP GID="2" GroupName="هفتگی">
+								<PACKAGE PID="2773" PackageName="بسته هفتگی 7 گیگ دائمی TDD" Price="185000" PricePaid="201650" Sort="10" />
+								<PACKAGE PID="2774" PackageName="بسته هفتگی 10 گیگ دائمی TDD" Price="250000" PricePaid="272500" Sort="10" />
+								<PACKAGE PID="2775" PackageName="بسته هفتگی 12 گیگ دائمی TDD" Price="300000" PricePaid="327000" Sort="10" />
+							</GROUP>
+						</SimCard>
+						<SimCard SID="1" SIMCardTypeName="اعتباری">
+							<GROUP GID="54" GroupName="یکساله">
+								<PACKAGE PID="2725" PackageName="یکساله 30 گیگ" Price="900000" PricePaid="981000" Sort="0" />
+								<PACKAGE PID="2716" PackageName="یکساله 48 گیگ" Price="1200000" PricePaid="1308000" Sort="0" />
+								<PACKAGE PID="2724" PackageName="یکساله 72 گیگ" Price="1550000" PricePaid="1689500" Sort="0" />
+							</GROUP>
+							<GROUP GID="10" GroupName="6ماهه">
+								<PACKAGE PID="2721" PackageName="6ماهه 18 گیگ" Price="550000" PricePaid="599500" Sort="1" />
+								<PACKAGE PID="2722" PackageName="6ماهه 36 گیگ" Price="950000" PricePaid="1035500" Sort="1" />
+								<PACKAGE PID="2723" PackageName="6ماهه  48 گیگ" Price="1150000" PricePaid="1253500" Sort="1" />
+							</GROUP>
+							<GROUP GID="111" GroupName="4ماهه">
+								<PACKAGE PID="2692" PackageName="4ماهه 10 گیگ" Price="420000" PricePaid="457800" Sort="2" />
+								<PACKAGE PID="2693" PackageName="4ماهه 15 گیگ" Price="540000" PricePaid="588600" Sort="2" />
+								<PACKAGE PID="2694" PackageName="4ماهه 25 گیگ" Price="780000" PricePaid="850200" Sort="2" />
+							</GROUP>
+							<GROUP GID="9" GroupName="3ماهه">
+								<PACKAGE PID="2718" PackageName="3ماهه9 گیگ" Price="330000" PricePaid="359700" Sort="3" />
+								<PACKAGE PID="2717" PackageName="3ماهه 12 گیگ" Price="375000" PricePaid="408750" Sort="3" />
+								<PACKAGE PID="2719" PackageName="3ماهه 18 گیگ" Price="470000" PricePaid="512300" Sort="3" />
+								<PACKAGE PID="2720" PackageName="3ماهه24 گیگ" Price="580000" PricePaid="632200" Sort="3" />
+							</GROUP>
+							<GROUP GID="8" GroupName="2ماهه">
+								<PACKAGE PID="2684" PackageName="2ماهه 8 گیگ" Price="320000" PricePaid="348800" Sort="4" />
+								<PACKAGE PID="2685" PackageName="2ماهه 10 گیگ" Price="360000" PricePaid="392400" Sort="4" />
+								<PACKAGE PID="2686" PackageName="2ماهه 15 گیگ" Price="460000" PricePaid="501400" Sort="4" />
+								<PACKAGE PID="2687" PackageName="2ماهه 20 گیگ" Price="600000" PricePaid="654000" Sort="4" />
+							</GROUP>
+							<GROUP GID="3" GroupName="ماهانه">
+								<PACKAGE PID="2631" PackageName="یکماهه 20 دقیقه ای داخل شبکه" Price="15000" PricePaid="16350" Sort="6" />
+								<PACKAGE PID="2650" PackageName="یکماهه 40 دقیقه ای داخل شبکه" Price="28000" PricePaid="30520" Sort="6" />
+								<PACKAGE PID="2656" PackageName="یکماهه 5 گیگ(2تا7صبح)" Price="45000" PricePaid="49050" Sort="6" />
+								<PACKAGE PID="2676" PackageName="یکماهه 80 دقیقه ای داخل شبکه" Price="52000" PricePaid="56680" Sort="6" />
+								<PACKAGE PID="2670" PackageName="یکماهه 7گیگ(6صبح تا12ظهر)" Price="75000" PricePaid="81750" Sort="6" />
+								<PACKAGE PID="2612" PackageName="یکماهه 10 گیگ(2تا7صبح)" Price="80000" PricePaid="87200" Sort="6" />
+								<PACKAGE PID="2641" PackageName="یکماهه 30گیگ(2تا7 صبح)" Price="90000" PricePaid="98100" Sort="6" />
+								<PACKAGE PID="2620" PackageName="یکماهه 10گیگ(6صبح تا12ظهر)" Price="90000" PricePaid="98100" Sort="6" />
+								<PACKAGE PID="2624" PackageName="یکماهه 160 دقیقه ای داخل شبکه" Price="96000" PricePaid="104640" Sort="6" />
+								<PACKAGE PID="2627" PackageName="یکماهه 1گیگ+100مگ(6صبح تا12ظهر)" Price="105000" PricePaid="114450" Sort="6" />
+								<PACKAGE PID="2606" PackageName="یکماهه 1 گیگ" Price="105000" PricePaid="114450" Sort="6" />
+								<PACKAGE PID="2635" PackageName="یکماهه 2گیگ+200مگ(6صبح تا12ظهر)" Price="140000" PricePaid="152600" Sort="6" />
+								<PACKAGE PID="2629" PackageName="یکماهه 2 گیگ" Price="140000" PricePaid="152600" Sort="6" />
+								<PACKAGE PID="2644" PackageName="یکماهه 3گیگ+300مگ(6صبح تا12ظهر)" Price="165000" PricePaid="179850" Sort="6" />
+								<PACKAGE PID="2637" PackageName="یکماهه 3 گیگ" Price="165000" PricePaid="179850" Sort="6" />
+								<PACKAGE PID="2643" PackageName="یکماهه 320 دقیقه ای داخل شبکه" Price="176000" PricePaid="191840" Sort="6" />
+								<PACKAGE PID="2652" PackageName="یکماهه 4گیگ+400مگ(6صبح تا12ظهر)" Price="185000" PricePaid="201650" Sort="6" />
+								<PACKAGE PID="2646" PackageName="یکماهه 4 گیگ" Price="185000" PricePaid="201650" Sort="6" />
+								<PACKAGE PID="2662" PackageName="یکماهه 5گیگ+500مگ(6صبح تا12ظهر)" Price="205000" PricePaid="223450" Sort="6" />
+								<PACKAGE PID="2654" PackageName="یکماهه 5 گیگ" Price="205000" PricePaid="223450" Sort="6" />
+								<PACKAGE PID="2672" PackageName="یکماهه 7گیگ+700مگ(6صبح تا12ظهر)" Price="245000" PricePaid="267050" Sort="6" />
+								<PACKAGE PID="2668" PackageName="یکماهه 7 گیگ" Price="245000" PricePaid="267050" Sort="6" />
+								<PACKAGE PID="2614" PackageName="یکماهه 10+1گیگ(6صبح تا12ظهر)" Price="295000" PricePaid="321550" Sort="6" />
+								<PACKAGE PID="2610" PackageName="یکماهه 10 گیگ" Price="295000" PricePaid="321550" Sort="6" />
+								<PACKAGE PID="2619" PackageName="یکماهه 1000 دقیقه ای داخل شبکه" Price="450000" PricePaid="490500" Sort="6" />
+							</GROUP>
+							<GROUP GID="11" GroupName="15روزه">
+								<PACKAGE PID="2466" PackageName="15روزه 400 مگ" Price="70000" PricePaid="76300" Sort="8" />
+								<PACKAGE PID="2470" PackageName="15روزه 750 مگ" Price="90000" PricePaid="98100" Sort="8" />
+								<PACKAGE PID="2460" PackageName="15روزه 1.5 گیگ" Price="115000" PricePaid="125350" Sort="8" />
+								<PACKAGE PID="2462" PackageName="15روزه 2.5 گیگ" Price="145000" PricePaid="158050" Sort="8" />
+								<PACKAGE PID="2464" PackageName="15روزه 3.5 گیگ" Price="165000" PricePaid="179850" Sort="8" />
+								<PACKAGE PID="2468" PackageName="15روزه 5 گیگ" Price="185000" PricePaid="201650" Sort="8" />
+							</GROUP>
+							<GROUP GID="2" GroupName="هفتگی">
+								<PACKAGE PID="2564" PackageName="هفتگی 2 گیگ(2تا7صبح)" Price="15000" PricePaid="16350" Sort="10" />
+								<PACKAGE PID="2578" PackageName="هفتگی 5 گیگ(2تا7صبح)" Price="25000" PricePaid="27250" Sort="10" />
+								<PACKAGE PID="2568" PackageName="هفتگی 200 مگ" Price="44000" PricePaid="47960" Sort="10" />
+								<PACKAGE PID="2574" PackageName="هفتگی 4گیگ(6صبح تا12ظهر)" Price="45000" PricePaid="49050" Sort="10" />
+								<PACKAGE PID="2584" PackageName="هفتگی 6گیگ(6صبح تا12ظهر)" Price="55000" PricePaid="59950" Sort="10" />
+								<PACKAGE PID="2570" PackageName="هفتگی 300 مگ" Price="55000" PricePaid="59950" Sort="10" />
+								<PACKAGE PID="2580" PackageName="هفتگی 500 مگ" Price="70000" PricePaid="76300" Sort="10" />
+								<PACKAGE PID="2586" PackageName="هفتگی 750 مگ" Price="83000" PricePaid="90470" Sort="10" />
+								<PACKAGE PID="2562" PackageName="هفتگی 1.5 گیگ" Price="109000" PricePaid="118810" Sort="10" />
+								<PACKAGE PID="2566" PackageName="هفتگی 2.5 گیگ" Price="130000" PricePaid="141700" Sort="10" />
+								<PACKAGE PID="2576" PackageName="هفتگی 5 گیگ" Price="180000" PricePaid="196200" Sort="10" />
+							</GROUP>
+							<GROUP GID="12" GroupName="3روزه">
+								<PACKAGE PID="2478" PackageName="3روزه 150 مگ" Price="35000" PricePaid="38150" Sort="11" />
+								<PACKAGE PID="2482" PackageName="3روزه 250 مگ" Price="44000" PricePaid="47960" Sort="11" />
+								<PACKAGE PID="2484" PackageName="3روزه 400 مگ" Price="53000" PricePaid="57770" Sort="11" />
+								<PACKAGE PID="2486" PackageName="3روزه 750 مگ" Price="67000" PricePaid="73030" Sort="11" />
+								<PACKAGE PID="2476" PackageName="3روزه 1.5 گیگ" Price="90000" PricePaid="98100" Sort="11" />
+								<PACKAGE PID="2480" PackageName="3روزه 2.5 گیگ" Price="110000" PricePaid="119900" Sort="11" />
+							</GROUP>
+							<GROUP GID="1" GroupName="روزانه">
+								<PACKAGE PID="2504" PackageName="روزانه 500 مگ(2تا7صبح)" Price="5000" PricePaid="5450" Sort="12" />
+								<PACKAGE PID="2490" PackageName="روزانه 1 گیگ(2تا7صبح)" Price="9000" PricePaid="9810" Sort="12" />
+								<PACKAGE PID="2506" PackageName="روزانه 60 مگ" Price="16000" PricePaid="17440" Sort="12" />
+								<PACKAGE PID="2494" PackageName="روزانه 100 مگ" Price="22000" PricePaid="23980" Sort="12" />
+								<PACKAGE PID="2498" PackageName="روزانه 200 مگ" Price="32000" PricePaid="34880" Sort="12" />
+								<PACKAGE PID="2500" PackageName="روزانه 300 مگ" Price="39000" PricePaid="42510" Sort="12" />
+								<PACKAGE PID="2502" PackageName="روزانه 400 مگ" Price="45000" PricePaid="49050" Sort="12" />
+								<PACKAGE PID="2508" PackageName="روزانه 750 مگ" Price="57000" PricePaid="62130" Sort="12" />
+								<PACKAGE PID="2492" PackageName="روزانه 1.5 گیگ" Price="74000" PricePaid="80660" Sort="12" />
+								<PACKAGE PID="2496" PackageName="روزانه 2.5 گیگ" Price="94000" PricePaid="102460" Sort="12" />
+							</GROUP>
+							<GROUP GID="6" GroupName="ساعتی">
+								<PACKAGE PID="2560" PackageName="نامحدود 1 ساعته (2 تا 8 صبح)" Price="9000" PricePaid="9810" Sort="13" />
+								<PACKAGE PID="2556" PackageName="نامحدود 2 ساعته (2 تا 8 صبح)" Price="15000" PricePaid="16350" Sort="13" />
+								<PACKAGE PID="2559" PackageName="نامحدود 3 ساعته(2تا8صبح)" Price="20000" PricePaid="21800" Sort="13" />
+								<PACKAGE PID="2473" PackageName="1گیگ 1 ساعته(8صبح تا2صبح فردا)" Price="20000" PricePaid="21800" Sort="13" />
+								<PACKAGE PID="2475" PackageName="2گیگ 2 ساعته(8صبح تا 2صبح فردا)" Price="30000" PricePaid="32700" Sort="13" />
+								<PACKAGE PID="2489" PackageName="3گیگ 3 ساعته(8صبح تا 2صبح فردا)" Price="40000" PricePaid="43600" Sort="13" />
+							</GROUP>
+							<GROUP GID="114" GroupName="شگفت انگیز">
+								<PACKAGE PID="2906" PackageName="1روزه 40 مگ" Price="10000" PricePaid="10900" Sort="999" />
+								<PACKAGE PID="2907" PackageName="3 روزه 100 مگ" Price="20000" PricePaid="21800" Sort="999" />
+								<PACKAGE PID="2908" PackageName="10 روزه 270 مگ" Price="50000" PricePaid="54500" Sort="999" />
+								<PACKAGE PID="2909" PackageName="15 روزه 600 مگ" Price="100000" PricePaid="109000" Sort="999" />
+								<PACKAGE PID="2910" PackageName="20 روزه 5632 مگ" Price="200000" PricePaid="218000" Sort="999" />
+							</GROUP>
+						</SimCard>
+						<SimCard SID="2" SIMCardTypeName="دائمی">
+							<GROUP GID="54" GroupName="یکساله">
+								<PACKAGE PID="2735" PackageName="یکساله 30 گیگ" Price="900000" PricePaid="981000" Sort="0" />
+								<PACKAGE PID="2726" PackageName="یکساله 48 گیگ" Price="1200000" PricePaid="1308000" Sort="0" />
+								<PACKAGE PID="2727" PackageName="یکساله 72 گیگ" Price="1550000" PricePaid="1689500" Sort="0" />
+							</GROUP>
+							<GROUP GID="10" GroupName="6ماهه">
+								<PACKAGE PID="2732" PackageName="6ماهه 18 گیگ" Price="550000" PricePaid="599500" Sort="1" />
+								<PACKAGE PID="2733" PackageName="6ماهه 36 گیگ" Price="950000" PricePaid="1035500" Sort="1" />
+								<PACKAGE PID="2734" PackageName="6ماهه  48گیگ" Price="1150000" PricePaid="1253500" Sort="1" />
+							</GROUP>
+							<GROUP GID="111" GroupName="4ماهه">
+								<PACKAGE PID="2696" PackageName="4ماهه 10 گیگ" Price="420000" PricePaid="457800" Sort="2" />
+								<PACKAGE PID="2697" PackageName="4ماهه 15 گیگ" Price="540000" PricePaid="588600" Sort="2" />
+								<PACKAGE PID="2695" PackageName="4ماهه 25 گیگ" Price="780000" PricePaid="850200" Sort="2" />
+							</GROUP>
+							<GROUP GID="9" GroupName="3ماهه">
+								<PACKAGE PID="2728" PackageName="3ماهه9 گیگ" Price="330000" PricePaid="359700" Sort="3" />
+								<PACKAGE PID="2729" PackageName="3ماهه 12 گیگ" Price="375000" PricePaid="408750" Sort="3" />
+								<PACKAGE PID="2730" PackageName="3ماهه 18 گیگ" Price="470000" PricePaid="512300" Sort="3" />
+								<PACKAGE PID="2731" PackageName="3ماهه24 گیگ" Price="580000" PricePaid="632200" Sort="3" />
+							</GROUP>
+							<GROUP GID="8" GroupName="2ماهه">
+								<PACKAGE PID="2688" PackageName="2ماهه 8 گیگ" Price="320000" PricePaid="348800" Sort="4" />
+								<PACKAGE PID="2689" PackageName="2ماهه 10 گیگ" Price="360000" PricePaid="392400" Sort="4" />
+								<PACKAGE PID="2690" PackageName="2ماهه 15 گیگ" Price="460000" PricePaid="501400" Sort="4" />
+								<PACKAGE PID="2691" PackageName="2ماهه 20 گیگ" Price="600000" PricePaid="654000" Sort="4" />
+							</GROUP>
+							<GROUP GID="3" GroupName="ماهانه">
+								<PACKAGE PID="2657" PackageName="یکماهه 5 گیگ(2تا7صبح)" Price="45000" PricePaid="49050" Sort="6" />
+								<PACKAGE PID="2618" PackageName="یکماهه 100 دقیقه ای داخل شبکه" Price="55000" PricePaid="59950" Sort="6" />
+								<PACKAGE PID="2671" PackageName="یکماهه 7گیگ(6صبح تا12ظهر)" Price="75000" PricePaid="81750" Sort="6" />
+								<PACKAGE PID="2613" PackageName="یکماهه 10 گیگ(2تا7صبح)" Price="80000" PricePaid="87200" Sort="6" />
+								<PACKAGE PID="2642" PackageName="یکماهه 30گیگ(2تا7 صبح)" Price="90000" PricePaid="98100" Sort="6" />
+								<PACKAGE PID="2621" PackageName="یکماهه 10گیگ(6صبح تا12ظهر)" Price="90000" PricePaid="98100" Sort="6" />
+								<PACKAGE PID="2632" PackageName="یکماهه 200 دقیقه ای داخل شبکه" Price="100000" PricePaid="109000" Sort="6" />
+								<PACKAGE PID="2628" PackageName="یکماهه 1گیگ+100مگ(6صبح تا12ظهر)" Price="105000" PricePaid="114450" Sort="6" />
+								<PACKAGE PID="2607" PackageName="یکماهه 1 گیگ" Price="105000" PricePaid="114450" Sort="6" />
+								<PACKAGE PID="2636" PackageName="یکماهه 2گیگ+200مگ(6صبح تا12ظهر)" Price="140000" PricePaid="152600" Sort="6" />
+								<PACKAGE PID="2630" PackageName="یکماهه 2 گیگ" Price="140000" PricePaid="152600" Sort="6" />
+								<PACKAGE PID="2645" PackageName="یکماهه 3گیگ+300مگ(6صبح تا12ظهر)" Price="165000" PricePaid="179850" Sort="6" />
+								<PACKAGE PID="2638" PackageName="یکماهه 3 گیگ" Price="165000" PricePaid="179850" Sort="6" />
+								<PACKAGE PID="2651" PackageName="یکماهه 400 دقیقه ای داخل شبکه" Price="180000" PricePaid="196200" Sort="6" />
+								<PACKAGE PID="2653" PackageName="یکماهه 4گیگ+400مگ(6صبح تا12ظهر)" Price="185000" PricePaid="201650" Sort="6" />
+								<PACKAGE PID="2647" PackageName="یکماهه 4 گیگ" Price="185000" PricePaid="201650" Sort="6" />
+								<PACKAGE PID="2663" PackageName="یکماهه 5گیگ+500مگ(6صبح تا12ظهر)" Price="205000" PricePaid="223450" Sort="6" />
+								<PACKAGE PID="2655" PackageName="یکماهه 5 گیگ" Price="205000" PricePaid="223450" Sort="6" />
+								<PACKAGE PID="2673" PackageName="یکماهه 7گیگ+700مگ(6صبح تا12ظهر)" Price="245000" PricePaid="267050" Sort="6" />
+								<PACKAGE PID="2669" PackageName="یکماهه 7 گیگ" Price="245000" PricePaid="267050" Sort="6" />
+								<PACKAGE PID="2615" PackageName="یکماهه 10+1گیگ(6صبح تا12ظهر)" Price="295000" PricePaid="321550" Sort="6" />
+								<PACKAGE PID="2611" PackageName="یکماهه 10 گیگ" Price="295000" PricePaid="321550" Sort="6" />
+								<PACKAGE PID="2677" PackageName="یکماهه 800 دقیقه ای داخل شبکه" Price="320000" PricePaid="348800" Sort="6" />
+							</GROUP>
+							<GROUP GID="11" GroupName="15روزه">
+								<PACKAGE PID="2467" PackageName="15روزه 400 مگ" Price="70000" PricePaid="76300" Sort="8" />
+								<PACKAGE PID="2471" PackageName="15روزه 750 مگ" Price="90000" PricePaid="98100" Sort="8" />
+								<PACKAGE PID="2461" PackageName="15روزه 1.5 گیگ" Price="115000" PricePaid="125350" Sort="8" />
+								<PACKAGE PID="2463" PackageName="15روزه 2.5 گیگ" Price="145000" PricePaid="158050" Sort="8" />
+								<PACKAGE PID="2465" PackageName="15روزه 3.5 گیگ" Price="165000" PricePaid="179850" Sort="8" />
+								<PACKAGE PID="2469" PackageName="15روزه 5 گیگ" Price="185000" PricePaid="201650" Sort="8" />
+							</GROUP>
+							<GROUP GID="2" GroupName="هفتگی">
+								<PACKAGE PID="2565" PackageName="هفتگی 2 گیگ(2تا7صبح)" Price="15000" PricePaid="16350" Sort="10" />
+								<PACKAGE PID="2579" PackageName="هفتگی 5 گیگ(2تا7صبح)" Price="25000" PricePaid="27250" Sort="10" />
+								<PACKAGE PID="2569" PackageName="هفتگی 200 مگ" Price="44000" PricePaid="47960" Sort="10" />
+								<PACKAGE PID="2575" PackageName="هفتگی 4گیگ(6صبح تا12ظهر)" Price="45000" PricePaid="49050" Sort="10" />
+								<PACKAGE PID="2585" PackageName="هفتگی 6گیگ(6صبح تا12ظهر)" Price="55000" PricePaid="59950" Sort="10" />
+								<PACKAGE PID="2571" PackageName="هفتگی 300 مگ" Price="55000" PricePaid="59950" Sort="10" />
+								<PACKAGE PID="2581" PackageName="هفتگی 500 مگ" Price="70000" PricePaid="76300" Sort="10" />
+								<PACKAGE PID="2587" PackageName="هفتگی 750 مگ" Price="83000" PricePaid="90470" Sort="10" />
+								<PACKAGE PID="2563" PackageName="هفتگی 1.5 گیگ" Price="109000" PricePaid="118810" Sort="10" />
+								<PACKAGE PID="2567" PackageName="هفتگی 2.5 گیگ" Price="130000" PricePaid="141700" Sort="10" />
+								<PACKAGE PID="2577" PackageName="هفتگی 5 گیگ" Price="180000" PricePaid="196200" Sort="10" />
+							</GROUP>
+							<GROUP GID="12" GroupName="3روزه">
+								<PACKAGE PID="2479" PackageName="3روزه 150 مگ" Price="35000" PricePaid="38150" Sort="11" />
+								<PACKAGE PID="2483" PackageName="3روزه 250 مگ" Price="44000" PricePaid="47960" Sort="11" />
+								<PACKAGE PID="2485" PackageName="3روزه 400 مگ" Price="53000" PricePaid="57770" Sort="11" />
+								<PACKAGE PID="2487" PackageName="3روزه 750 مگ" Price="67000" PricePaid="73030" Sort="11" />
+								<PACKAGE PID="2477" PackageName="3روزه 1.5 گیگ" Price="90000" PricePaid="98100" Sort="11" />
+								<PACKAGE PID="2481" PackageName="3روزه 2.5 گیگ" Price="110000" PricePaid="119900" Sort="11" />
+							</GROUP>
+							<GROUP GID="1" GroupName="روزانه">
+								<PACKAGE PID="2505" PackageName="روزانه 500 مگ(2تا7صبح)" Price="5000" PricePaid="5450" Sort="12" />
+								<PACKAGE PID="2491" PackageName="روزانه 1 گیگ(2تا7صبح)" Price="9000" PricePaid="9810" Sort="12" />
+								<PACKAGE PID="2507" PackageName="روزانه 60 مگ" Price="16000" PricePaid="17440" Sort="12" />
+								<PACKAGE PID="2495" PackageName="روزانه 100 مگ" Price="22000" PricePaid="23980" Sort="12" />
+								<PACKAGE PID="2499" PackageName="روزانه 200 مگ" Price="32000" PricePaid="34880" Sort="12" />
+								<PACKAGE PID="2501" PackageName="روزانه 300 مگ" Price="39000" PricePaid="42510" Sort="12" />
+								<PACKAGE PID="2503" PackageName="روزانه 400 مگ" Price="45000" PricePaid="49050" Sort="12" />
+								<PACKAGE PID="2509" PackageName="روزانه 750 مگ" Price="57000" PricePaid="62130" Sort="12" />
+								<PACKAGE PID="2493" PackageName="روزانه 1.5 گیگ" Price="74000" PricePaid="80660" Sort="12" />
+								<PACKAGE PID="2497" PackageName="روزانه 2.5 گیگ" Price="94000" PricePaid="102460" Sort="12" />
+							</GROUP>
+							<GROUP GID="6" GroupName="ساعتی">
+								<PACKAGE PID="2561" PackageName="نامحدود 1 ساعته (2 تا 8 صبح)" Price="9000" PricePaid="9810" Sort="13" />
+								<PACKAGE PID="2557" PackageName="نامحدود 2 ساعته (2 تا 8 صبح)" Price="15000" PricePaid="16350" Sort="13" />
+								<PACKAGE PID="2558" PackageName="نامحدود 3 ساعته (2تا8صبح)" Price="20000" PricePaid="21800" Sort="13" />
+								<PACKAGE PID="2474" PackageName="2گیگ 2 ساعته (8صبح تا 2صبح)" Price="30000" PricePaid="32700" Sort="13" />
+								<PACKAGE PID="2488" PackageName="3گیگ 3 ساعته (8صبح تا 2صبح)" Price="40000" PricePaid="43600" Sort="13" />
+							</GROUP>
+						</SimCard>
+					</PIN>
+					<PIN Price="1" available="1" isWholeSale="0">
+						<CID>32</CID>
+						<PersianTitle>پیشنهادهای ویژه ایرانسل</PersianTitle>
+						<EnglishTitle>Irancell Featured Offers</EnglishTitle>
+					</PIN>
+				</PINs>
+			</Operator>
+			<Operator OID="MCI" Logo="http://core.eways.ir/CoreImages/Operators/MCI.jpg">
+				<Name language="fa-IR">همراه اول</Name>
+				<Name language="en-US">Hamrahe Aval</Name>
+				<PINs>
+					<PIN Price="9850" available="1" isWholeSale="0">
+						<CID>13</CID>
+						<PersianTitle>همراه اول 1000 تومانی</PersianTitle>
+						<EnglishTitle>MCI 10000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="19700" available="1" isWholeSale="0">
+						<CID>8</CID>
+						<PersianTitle>همراه اول 2000 تومانی</PersianTitle>
+						<EnglishTitle>MCI 20000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="49250" available="1" isWholeSale="0">
+						<CID>9</CID>
+						<PersianTitle>همراه اول 5000 تومانی</PersianTitle>
+						<EnglishTitle>MCI 50000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="98500" available="1" isWholeSale="0">
+						<CID>10</CID>
+						<PersianTitle>همراه اول 10000 تومانی</PersianTitle>
+						<EnglishTitle>MCI 100000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="197000" available="1" isWholeSale="0">
+						<CID>11</CID>
+						<PersianTitle>همراه اول 20000 تومانی</PersianTitle>
+						<EnglishTitle>MCI 200000 Rial</EnglishTitle>
+					</PIN>
+				</PINs>
+			</Operator>
+			<Operator OID="TMCI" Logo="http://core.eways.ir/CoreImages/Operators/TMCI.jpg">
+				<Name language="fa-IR">شارژ مستقیم همراه اول</Name>
+				<Name language="en-US">Hamrahe Aval</Name>
+				<PINs>
+					<PIN Price="9850" available="1" isWholeSale="0">
+						<CID>51</CID>
+						<PersianTitle>شارژ مستقیم 10000 ریالی</PersianTitle>
+						<EnglishTitle>MCI Topup 10000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="19700" available="1" isWholeSale="0">
+						<CID>52</CID>
+						<PersianTitle>شارژ مستقیم 20000 ریالی</PersianTitle>
+						<EnglishTitle>MCI Topup 20000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="49250" available="1" isWholeSale="0">
+						<CID>53</CID>
+						<PersianTitle>شارژ مستقیم 50000 ریالی</PersianTitle>
+						<EnglishTitle>MCI Topup 50000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="98500" available="1" isWholeSale="0">
+						<CID>54</CID>
+						<PersianTitle>شارژ مستقیم 100000 ریالی</PersianTitle>
+						<EnglishTitle>MCI Topup 100000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="197000" available="1" isWholeSale="0">
+						<CID>55</CID>
+						<PersianTitle>شارژ مستقیم 200000 ریالی</PersianTitle>
+						<EnglishTitle>MCI Topup 200000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="0.985" available="1" isWholeSale="0">
+						<CID>50</CID>
+						<PersianTitle>شارژ مستقيم همراه اول </PersianTitle>
+						<EnglishTitle>MCI Topup floating</EnglishTitle>
+					</PIN>
+					<PIN Price="0.985" available="1">
+						<CID>56</CID>
+						<PersianTitle>بسته ی اینترنتی همراه اول </PersianTitle>
+						<EnglishTitle>MCI Topup Interent Package</EnglishTitle>
+						<SimCard SID="7" SIMCardTypeName="همه سيم کارت ها">
+							<GROUP GID="54" GroupName="یکساله">
+								<PACKAGE PID="2886" PackageName="1ساله 30 گیگ" Price="890000" PricePaid="970100" Sort="0" />
+								<PACKAGE PID="2887" PackageName="1ساله 45 گیگ" Price="1120000" PricePaid="1220800" Sort="0" />
+								<PACKAGE PID="2888" PackageName="1ساله 70 گیگ" Price="1590000" PricePaid="1733100" Sort="0" />
+							</GROUP>
+							<GROUP GID="10" GroupName="6ماهه">
+								<PACKAGE PID="2883" PackageName="6ماهه 20 گیگ" Price="590000" PricePaid="643100" Sort="1" />
+								<PACKAGE PID="2884" PackageName="6ماهه 35 گیگ" Price="990000" PricePaid="1079100" Sort="1" />
+								<PACKAGE PID="2885" PackageName="6ماهه 50 گیگ" Price="1190000" PricePaid="1297100" Sort="1" />
+							</GROUP>
+							<GROUP GID="111" GroupName="4ماهه">
+								<PACKAGE PID="2842" PackageName=" 4ماهه 10 گیگ" Price="420000" PricePaid="457800" Sort="2" />
+								<PACKAGE PID="2840" PackageName=" 4ماهه 15 گیگ" Price="540000" PricePaid="588600" Sort="2" />
+								<PACKAGE PID="2841" PackageName=" 4ماهه 25 گیگ" Price="780000" PricePaid="850200" Sort="2" />
+							</GROUP>
+							<GROUP GID="9" GroupName="3ماهه">
+								<PACKAGE PID="2878" PackageName="3ماهه 8 گیگ" Price="320000" PricePaid="348800" Sort="3" />
+								<PACKAGE PID="2879" PackageName="3ماهه 10 گیگ" Price="350000" PricePaid="381500" Sort="3" />
+								<PACKAGE PID="2880" PackageName="3ماهه 16 گیگ" Price="440000" PricePaid="479600" Sort="3" />
+								<PACKAGE PID="2881" PackageName="3ماهه 25 گیگ" Price="640000" PricePaid="697600" Sort="3" />
+								<PACKAGE PID="2882" PackageName="3ماهه 35 گیگ" Price="790000" PricePaid="861100" Sort="3" />
+							</GROUP>
+							<GROUP GID="8" GroupName="2ماهه">
+								<PACKAGE PID="2875" PackageName="2ماهه 9 گیگ" Price="340000" PricePaid="370600" Sort="4" />
+								<PACKAGE PID="2876" PackageName="2ماهه 12 گیگ" Price="400000" PricePaid="436000" Sort="4" />
+								<PACKAGE PID="2877" PackageName="2ماهه 18 گیگ" Price="540000" PricePaid="588600" Sort="4" />
+							</GROUP>
+							<GROUP GID="3" GroupName="ماهانه">
+								<PACKAGE PID="2891" PackageName="بسته 30 روزه شبانه 12 گیگ(2 تا 7 صبح)" Price="59000" PricePaid="64310" Sort="6" />
+								<PACKAGE PID="2866" PackageName="صبحانت 30روزه 8 گيگ 6 تا 12 ظهر" Price="80000" PricePaid="87200" Sort="6" />
+								<PACKAGE PID="2867" PackageName="صبحانت 30روزه 12 گيگ 6 تا 12 ظهر" Price="100000" PricePaid="109000" Sort="6" />
+								<PACKAGE PID="2868" PackageName="30روزه 1 گیگ + 100 مگ هديه صبحانت (6صبح تا 12ظهر)" Price="104000" PricePaid="113360" Sort="6" />
+								<PACKAGE PID="2869" PackageName="30روزه 2 گیگ + 200 مگ هديه صبحانت (6صبح تا 12ظهر)" Price="139000" PricePaid="151510" Sort="6" />
+								<PACKAGE PID="2870" PackageName="30روزه 4 گیگ + 400 مگ هديه صبحانت (6صبح تا 12ظهر)" Price="184000" PricePaid="200560" Sort="6" />
+								<PACKAGE PID="2871" PackageName="30روزه 5 گیگ + 500 مگ هديه صبحانت (6صبح تا 12ظهر)" Price="204000" PricePaid="222360" Sort="6" />
+								<PACKAGE PID="2872" PackageName="30روزه 7 گیگ + 700 مگ هديه صبحانت (6صبح تا 12ظهر)" Price="244000" PricePaid="265960" Sort="6" />
+								<PACKAGE PID="2873" PackageName="30روزه 10 گیگ + 1 گیگ هديه صبحانت (6صبح تا 12ظهر)" Price="294000" PricePaid="320460" Sort="6" />
+								<PACKAGE PID="2874" PackageName="30روزه 15 گیگ + 1.5 گیگ هديه صبحانت (6صبح تا 12ظهر)" Price="369000" PricePaid="402210" Sort="6" />
+							</GROUP>
+							<GROUP GID="2" GroupName="هفتگی">
+								<PACKAGE PID="2890" PackageName="بسته 7 روزه شبانه 6 گیگ(2 تا 7 صبح)" Price="29000" PricePaid="31610" Sort="10" />
+								<PACKAGE PID="2855" PackageName="صبحانت 7روزه 3 گيگ 6 تا 12 ظهر" Price="40000" PricePaid="43600" Sort="10" />
+								<PACKAGE PID="2856" PackageName="7روزه 200 مگ" Price="44000" PricePaid="47960" Sort="10" />
+								<PACKAGE PID="2857" PackageName="صبحانت 7روزه 5 گيگ 6 تا 12 ظهر" Price="50000" PricePaid="54500" Sort="10" />
+								<PACKAGE PID="2858" PackageName="7روزه 300 مگ" Price="55000" PricePaid="59950" Sort="10" />
+								<PACKAGE PID="2859" PackageName="7روزه 500 مگ" Price="70000" PricePaid="76300" Sort="10" />
+								<PACKAGE PID="2860" PackageName="7روزه 750 مگ" Price="83000" PricePaid="90470" Sort="10" />
+								<PACKAGE PID="2861" PackageName="7روزه 1.5 گیگ" Price="109000" PricePaid="118810" Sort="10" />
+								<PACKAGE PID="2862" PackageName="7روزه 2.5 گیگ" Price="130000" PricePaid="141700" Sort="10" />
+								<PACKAGE PID="2863" PackageName="7روزه 3 گیگ" Price="140000" PricePaid="152600" Sort="10" />
+								<PACKAGE PID="2864" PackageName="7روزه 4 گیگ" Price="160000" PricePaid="174400" Sort="10" />
+								<PACKAGE PID="2865" PackageName="7روزه 6 گیگ" Price="195000" PricePaid="212550" Sort="10" />
+							</GROUP>
+							<GROUP GID="1" GroupName="روزانه">
+								<PACKAGE PID="2814" PackageName="روزانه 60مگ" Price="16000" PricePaid="17440" Sort="12" />
+								<PACKAGE PID="2808" PackageName="روزانه 150 مگ" Price="27000" PricePaid="29430" Sort="12" />
+								<PACKAGE PID="2810" PackageName="روزانه 250 مگ" Price="36000" PricePaid="39240" Sort="12" />
+								<PACKAGE PID="2850" PackageName="1روزه 500 مگ" Price="49000" PricePaid="53410" Sort="12" />
+								<PACKAGE PID="2851" PackageName="1روزه 750 مگ" Price="59000" PricePaid="64310" Sort="12" />
+								<PACKAGE PID="2852" PackageName="1روزه 1 گیگ" Price="64000" PricePaid="69760" Sort="12" />
+								<PACKAGE PID="2853" PackageName="1روزه 2 گیگ" Price="84000" PricePaid="91560" Sort="12" />
+								<PACKAGE PID="2854" PackageName="1روزه 3 گیگ" Price="99000" PricePaid="107910" Sort="12" />
+							</GROUP>
+						</SimCard>
+					</PIN>
+				</PINs>
+			</Operator>
+			<Operator OID="TALIYA" Logo="http://core.eways.ir/CoreImages/Operators/TALIYA.jpg">
+				<Name language="fa-IR">تالیا</Name>
+				<Name language="en-US">Talya</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="RIGHTEL" Logo="http://core.eways.ir/CoreImages/Operators/RIGHTEL.jpg">
+				<Name language="fa-IR">رایتل</Name>
+				<Name language="en-US">Rightel</Name>
+				<PINs>
+					<PIN Price="19700" available="1" isWholeSale="0">
+						<CID>15</CID>
+						<PersianTitle>رایتل 2000 تومانی</PersianTitle>
+						<EnglishTitle>Rightel 20000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="49250" available="1" isWholeSale="0">
+						<CID>16</CID>
+						<PersianTitle>رایتل 5000 تومانی</PersianTitle>
+						<EnglishTitle>Rightel 50000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="98500" available="1" isWholeSale="0">
+						<CID>17</CID>
+						<PersianTitle>رایتل 10000 تومانی</PersianTitle>
+						<EnglishTitle>Rightel 100000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="197000" available="1" isWholeSale="0">
+						<CID>18</CID>
+						<PersianTitle>رایتل 20000 تومانی</PersianTitle>
+						<EnglishTitle>Rightel 200000 Rial</EnglishTitle>
+					</PIN>
+					<PIN Price="492500" available="1" isWholeSale="0">
+						<CID>20</CID>
+						<PersianTitle>رایتل 50000 تومانی</PersianTitle>
+						<EnglishTitle>Rightel 500000 Rial</EnglishTitle>
+					</PIN>
+				</PINs>
+			</Operator>
+			<Operator OID="TRIGHTEL" Logo="http://core.eways.ir/CoreImages/Operator/TRIGHTEL.jpg">
+				<Name language="fa-IR">شارژ مستقیم رایتل</Name>
+				<Name language="en-US">Rightel</Name>
+				<PINs>
+					<PIN Price="0.985" available="1" isWholeSale="0">
+						<CID>60</CID>
+						<PersianTitle>شارژ مستقیم رایتل</PersianTitle>
+						<EnglishTitle>Rightel Topup</EnglishTitle>
+					</PIN>
+					<PIN Price="0.985" available="1" isWholeSale="0">
+						<CID>61</CID>
+						<PersianTitle>شارژ شورانگیز رایتل</PersianTitle>
+						<EnglishTitle>Rightel Wonderful Topup</EnglishTitle>
+					</PIN>
+					<PIN Price="0.985" available="1">
+						<CID>62</CID>
+						<PersianTitle>بسته اینترنت رایتل</PersianTitle>
+						<EnglishTitle>Rightel Internet Package</EnglishTitle>
+						<SimCard SID="1" SIMCardTypeName="اعتباری">
+							<GROUP GID="54" GroupName="یکساله">
+								<PACKAGE PID="2975" PackageName="365روزه(10)  گیگ +150 گیگ اینترنت رایگان 2الی 7 صبح" Price="520000" PricePaid="566800" Sort="0" />
+								<PACKAGE PID="2976" PackageName="365روزه(36) گیگ +2000 دقیقه تماس صوتی درون شبکه  +150 گیگ اینترنت رایگان 2الی 7 صبح" Price="990000" PricePaid="1079100" Sort="0" />
+								<PACKAGE PID="2977" PackageName="365روزه(42) گیگ +2000 دقیقه تماس صوتی درون شبکه  +150 گیگ اینترنت رایگان 2الی 7 صبح" Price="1150000" PricePaid="1253500" Sort="0" />
+								<PACKAGE PID="2978" PackageName="365روزه(74)  گیگ +150 گیگ اینترنت رایگان 2الی 7 صبح" Price="1550000" PricePaid="1689500" Sort="0" />
+								<PACKAGE PID="2979" PackageName="365روزه(200)  گیگ +150 گیگ اینترنت رایگان 2الی 7 صبح" Price="3990000" PricePaid="4349100" Sort="0" />
+							</GROUP>
+							<GROUP GID="10" GroupName="6ماهه">
+								<PACKAGE PID="2968" PackageName="180روزه(9+9)  گیگ +1000 دقیقه تماس صوتی درون شبکه+80 گیگ اینترنت رایگان 2الی 7 صبح" Price="420000" PricePaid="457800" Sort="1" />
+								<PACKAGE PID="2969" PackageName="180روزه(12)  گیگ +1000 دقیقه تماس صوتی درون شبکه+80 گیگ اینترنت رایگان 2الی 7 صبح" Price="490000" PricePaid="534100" Sort="1" />
+								<PACKAGE PID="2970" PackageName="180روزه(18+18)  گیگ +80 گیگ اینترنت رایگان 2الی 7 صبح" Price="580000" PricePaid="632200" Sort="1" />
+								<PACKAGE PID="2971" PackageName="180روزه(21+21)  گیگ +1000 دقیقه تماس صوتی درون شبکه+80 گیگ اینترنت رایگان 2الی 7 صبح" Price="700000" PricePaid="763000" Sort="1" />
+								<PACKAGE PID="2972" PackageName="180روزه(42+42)  گیگ +80 گیگ اینترنت رایگان 2الی 7 صبح" Price="990000" PricePaid="1079100" Sort="1" />
+								<PACKAGE PID="2973" PackageName="180 روزه (60 + 60)گیگ+80 گیگ اینترنت رایگان 2الی 7 صبح" Price="1390000" PricePaid="1515100" Sort="1" />
+								<PACKAGE PID="2974" PackageName="180روزه(100+100)  گیگ +80 گیگ اینترنت رایگان 2الی 7 صبح" Price="1990000" PricePaid="2169100" Sort="1" />
+							</GROUP>
+							<GROUP GID="9" GroupName="3ماهه">
+								<PACKAGE PID="2963" PackageName="90روزه(4)  گیگ +40 گیگ اینترنت رایگان 2الی 7 صبح" Price="240000" PricePaid="261600" Sort="3" />
+								<PACKAGE PID="2965" PackageName="90روزه(9+9)  گیگ +40 گیگ اینترنت رایگان 2الی 7 صبح" Price="320000" PricePaid="348800" Sort="3" />
+								<PACKAGE PID="2966" PackageName="90 روزه(15+ 15) گیگ+40 گیگ اینترنت رایگان 2الی 7 صبح" Price="430000" PricePaid="468700" Sort="3" />
+								<PACKAGE PID="2967" PackageName="90 روزه (21+ 21)گیگ+40 گیگ اینترنت رایگان 2الی 7 صبح" Price="530000" PricePaid="577700" Sort="3" />
+								<PACKAGE PID="2964" PackageName="90 روزه (36 + 36)گیگ+40 گیگ اینترنت رایگان 2الی 7 صبح" Price="790000" PricePaid="861100" Sort="3" />
+							</GROUP>
+							<GROUP GID="3" GroupName="ماهانه">
+								<PACKAGE PID="2960" PackageName="30 روزه 3 گیگ- ویژه ساعات افت مصرف+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="30000" PricePaid="32700" Sort="6" />
+								<PACKAGE PID="2949" PackageName="30روزه (200+200) مگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="55000" PricePaid="59950" Sort="6" />
+								<PACKAGE PID="2950" PackageName="30 روزه 300  مگ+10گیگ اینترنت رایگان 2الی 7 صبح" Price="59000" PricePaid="64310" Sort="6" />
+								<PACKAGE PID="2961" PackageName="30روزه(20)  گیگ اینترنت ویژه ساعات افت مصرف +10 گیگ اینترنت رایگان 2الی 7 صبح" Price="70000" PricePaid="76300" Sort="6" />
+								<PACKAGE PID="2962" PackageName="30روزه(30)  گیگ اینترنت ویژه ساعات افت مصرف +10 گیگ اینترنت رایگان 2الی 7 صبح" Price="100000" PricePaid="109000" Sort="6" />
+								<PACKAGE PID="2946" PackageName="30روزه (2+1)  گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="105000" PricePaid="114450" Sort="6" />
+								<PACKAGE PID="2948" PackageName="30روزه (1.5)  گیگ+5000 دقیقه تماس صوتی درون شبکه+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="125000" PricePaid="136250" Sort="6" />
+								<PACKAGE PID="2947" PackageName="30روزه(1.5+3)  گیگ +10 گیگ اینترنت رایگان 2الی 7 صبح" Price="125000" PricePaid="136250" Sort="6" />
+								<PACKAGE PID="3044" PackageName="30 روزه (2.5 +5 )گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="155000" PricePaid="168950" Sort="6" />
+								<PACKAGE PID="2952" PackageName="30 روزه(3+6) گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="165000" PricePaid="179850" Sort="6" />
+								<PACKAGE PID="3043" PackageName="30 روزه 3.5 گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="175000" PricePaid="190750" Sort="6" />
+								<PACKAGE PID="3042" PackageName="30 روزه( 4.5 +9 )گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="195000" PricePaid="212550" Sort="6" />
+								<PACKAGE PID="2955" PackageName="30 روزه( 7 + 14 )گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="245000" PricePaid="267050" Sort="6" />
+								<PACKAGE PID="2956" PackageName="30 روزه 8 گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="265000" PricePaid="288850" Sort="6" />
+								<PACKAGE PID="2957" PackageName="30روزه(24+12)  گیگ +10 گیگ اینترنت رایگان 2الی 7 صبح" Price="325000" PricePaid="354250" Sort="6" />
+								<PACKAGE PID="2958" PackageName="30 روزه (24 + 48 )گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="490000" PricePaid="534100" Sort="6" />
+								<PACKAGE PID="2959" PackageName="30 روزه 30 گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="590000" PricePaid="643100" Sort="6" />
+							</GROUP>
+							<GROUP GID="11" GroupName="15روزه">
+								<PACKAGE PID="1632" PackageName="15 روزه (200 مگ)" Price="44000" PricePaid="47960" Sort="8" />
+								<PACKAGE PID="1633" PackageName="15روزه (12 گیگ) ویژه ساعات 6 تا 12 ظهر" Price="50000" PricePaid="54500" Sort="8" />
+								<PACKAGE PID="3029" PackageName="15 روزه 512 مگ" Price="70000" PricePaid="76300" Sort="8" />
+								<PACKAGE PID="1635" PackageName="15 روزه (1.5 گیگ)" Price="115000" PricePaid="125350" Sort="8" />
+								<PACKAGE PID="3030" PackageName="15 روزه (3 گیگ)" Price="140000" PricePaid="152600" Sort="8" />
+								<PACKAGE PID="1637" PackageName="15 روزه (5 گیگ)" Price="175000" PricePaid="190750" Sort="8" />
+							</GROUP>
+							<GROUP GID="2" GroupName="هفتگی">
+								<PACKAGE PID="3028" PackageName="7 روزه 3 گیگ-ویژه ساعت افت مصرف" Price="15000" PricePaid="16350" Sort="10" />
+								<PACKAGE PID="1621" PackageName="7 روزه (100 مگ)" Price="22000" PricePaid="23980" Sort="10" />
+								<PACKAGE PID="3026" PackageName="7 روزه(150+150) مگ" Price="35000" PricePaid="38150" Sort="10" />
+								<PACKAGE PID="1623" PackageName="7 روزه (200 مگ)" Price="40000" PricePaid="43600" Sort="10" />
+								<PACKAGE PID="3027" PackageName="7 روزه   300مگ" Price="52000" PricePaid="56680" Sort="10" />
+								<PACKAGE PID="1625" PackageName="7 روزه (600مگ+1گیگ)" Price="75000" PricePaid="81750" Sort="10" />
+								<PACKAGE PID="1626" PackageName="7 روزه (700 مگ)" Price="80000" PricePaid="87200" Sort="10" />
+								<PACKAGE PID="1627" PackageName="7 روزه (1.2+5گیگ)" Price="100000" PricePaid="109000" Sort="10" />
+								<PACKAGE PID="1628" PackageName="7 روزه (2.5+5 گیگ)" Price="125000" PricePaid="136250" Sort="10" />
+								<PACKAGE PID="1629" PackageName="7 روزه (3 گیگ)" Price="135000" PricePaid="147150" Sort="10" />
+								<PACKAGE PID="1630" PackageName="7روزه (3.5+3.5گیگ)" Price="150000" PricePaid="163500" Sort="10" />
+							</GROUP>
+							<GROUP GID="12" GroupName="3روزه">
+								<PACKAGE PID="1615" PackageName="3 روزه (300+600 مگ)" Price="50000" PricePaid="54500" Sort="11" />
+								<PACKAGE PID="1616" PackageName="3 روزه (350 مگ)" Price="52000" PricePaid="56680" Sort="11" />
+								<PACKAGE PID="1618" PackageName="3 روزه (400+800 مگ)" Price="60000" PricePaid="65400" Sort="11" />
+								<PACKAGE PID="1620" PackageName="3 روزه (3گیگ)" Price="110000" PricePaid="119900" Sort="11" />
+							</GROUP>
+							<GROUP GID="1" GroupName="روزانه">
+								<PACKAGE PID="3023" PackageName="1 روزه 40  مگ" Price="12000" PricePaid="13080" Sort="12" />
+								<PACKAGE PID="3024" PackageName="1 روزه(100+100)مگ" Price="21000" PricePaid="22890" Sort="12" />
+								<PACKAGE PID="1609" PackageName="1 روزه (150 مگ)" Price="23000" PricePaid="25070" Sort="12" />
+								<PACKAGE PID="1610" PackageName="1 روزه ( 200+300مگ)" Price="30000" PricePaid="32700" Sort="12" />
+								<PACKAGE PID="1611" PackageName="1 روزه (250 مگ)" Price="35000" PricePaid="38150" Sort="12" />
+								<PACKAGE PID="1612" PackageName="1 روزه ( 300+700 مگ)" Price="39000" PricePaid="42510" Sort="12" />
+								<PACKAGE PID="1631" PackageName="10 روزه ( 350 مگ)" Price="60000" PricePaid="65400" Sort="12" />
+								<PACKAGE PID="3025" PackageName="1 روزه 1.2 گیگ" Price="64000" PricePaid="69760" Sort="12" />
+								<PACKAGE PID="1614" PackageName="1 روزه (3 گیگ)" Price="90000" PricePaid="98100" Sort="12" />
+							</GROUP>
+							<GROUP GID="95" GroupName="بسته های دکا">
+								<PACKAGE PID="2736" PackageName="دکا (یکماهه : 10000 دقیقه مکالمه درون شبکه + 10000 پیامک درون شبکه )" Price="110092" PricePaid="120000" Sort="999" />
+							</GROUP>
+							<GROUP GID="93" GroupName="حجمی">
+								<PACKAGE PID="672" PackageName="حجم افزایشی (1گیگ)" Price="70000" PricePaid="76300" Sort="999" />
+								<PACKAGE PID="674" PackageName="حجم افزایشی (2گیگ)" Price="100000" PricePaid="109000" Sort="999" />
+								<PACKAGE PID="676" PackageName="حجم افزایشی (5گیگ)" Price="190000" PricePaid="207100" Sort="999" />
+							</GROUP>
+						</SimCard>
+						<SimCard SID="2" SIMCardTypeName="دائمی">
+							<GROUP GID="54" GroupName="یکساله">
+								<PACKAGE PID="2941" PackageName="365روزه(10)  گیگ +150 گیگ اینترنت رایگان 2الی 7 صبح" Price="520000" PricePaid="566800" Sort="0" />
+								<PACKAGE PID="2942" PackageName="365روزه(36) گیگ +2000 دقیقه تماس صوتی درون شبکه  +150 گیگ اینترنت رایگان 2الی 7 صبح" Price="990000" PricePaid="1079100" Sort="0" />
+								<PACKAGE PID="2943" PackageName="365روزه(42) گیگ +2000 دقیقه تماس صوتی درون شبکه  +150 گیگ اینترنت رایگان 2الی 7 صبح" Price="1150000" PricePaid="1253500" Sort="0" />
+								<PACKAGE PID="2944" PackageName="365روزه(74)  گیگ +150 گیگ اینترنت رایگان 2الی 7 صبح" Price="1550000" PricePaid="1689500" Sort="0" />
+								<PACKAGE PID="2945" PackageName="365روزه(200)  گیگ +150 گیگ اینترنت رایگان 2الی 7 صبح" Price="3990000" PricePaid="4349100" Sort="0" />
+							</GROUP>
+							<GROUP GID="10" GroupName="6ماهه">
+								<PACKAGE PID="2934" PackageName="180روزه(9+9)  گیگ +1000 دقیقه تماس صوتی درون شبکه+80 گیگ اینترنت رایگان 2الی 7 صبح" Price="420000" PricePaid="457800" Sort="1" />
+								<PACKAGE PID="2935" PackageName="180روزه(12)  گیگ +1000 دقیقه تماس صوتی درون شبکه+80 گیگ اینترنت رایگان 2الی 7 صبح" Price="490000" PricePaid="534100" Sort="1" />
+								<PACKAGE PID="2936" PackageName="180روزه(18+18) گیگ +80 گیگ اینترنت رایگان 2الی 7 صبح" Price="580000" PricePaid="632200" Sort="1" />
+								<PACKAGE PID="2937" PackageName="180روزه(21+21) گیگ +1000 دقیقه تماس صوتی درون شبکه+80 گیگ اینترنت رایگان 2الی 7 صبح" Price="700000" PricePaid="763000" Sort="1" />
+								<PACKAGE PID="2938" PackageName="180روزه(42+42) گیگ +80 گیگ اینترنت رایگان 2الی 7 صبح" Price="990000" PricePaid="1079100" Sort="1" />
+								<PACKAGE PID="2939" PackageName="180 روزه (60 + 60)گیگ+80 گیگ اینترنت رایگان 2الی 7 صبح" Price="1390000" PricePaid="1515100" Sort="1" />
+								<PACKAGE PID="2940" PackageName="180روزه(100+100) گیگ +80 گیگ اینترنت رایگان 2الی 7 صبح" Price="1990000" PricePaid="2169100" Sort="1" />
+							</GROUP>
+							<GROUP GID="9" GroupName="3ماهه">
+								<PACKAGE PID="2929" PackageName="90روزه(4)گیگ +40 گیگ اینترنت رایگان 2الی 7 صبح" Price="240000" PricePaid="261600" Sort="3" />
+								<PACKAGE PID="2930" PackageName="90روزه(9+9)گیگ +40 گیگ اینترنت رایگان 2الی 7 صبح" Price="320000" PricePaid="348800" Sort="3" />
+								<PACKAGE PID="2931" PackageName="90 روزه( 15+ 15) گیگ+40 گیگ اینترنت رایگان 2الی 7 صبح" Price="430000" PricePaid="468700" Sort="3" />
+								<PACKAGE PID="2932" PackageName="90 روزه (21+ 21)گیگ+40 گیگ اینترنت رایگان 2الی 7 صبح" Price="530000" PricePaid="577700" Sort="3" />
+								<PACKAGE PID="2933" PackageName="90 روزه (36 + 36 )گیگ+40 گیگ اینترنت رایگان 2الی 7 صبح" Price="790000" PricePaid="861100" Sort="3" />
+							</GROUP>
+							<GROUP GID="3" GroupName="ماهانه">
+								<PACKAGE PID="2928" PackageName="30 روزه 3 گیگ- ویژه ساعات افت مصرف+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="30000" PricePaid="32700" Sort="6" />
+								<PACKAGE PID="2911" PackageName="30روزه (200+200) مگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="55000" PricePaid="59950" Sort="6" />
+								<PACKAGE PID="2912" PackageName="30 روزه 300  مگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="59000" PricePaid="64310" Sort="6" />
+								<PACKAGE PID="2926" PackageName="30روزه(20) گیگ اینترنت ویژه ساعات افت مصرف +10 گیگ اینترنت رایگان 2الی 7 صبح" Price="70000" PricePaid="76300" Sort="6" />
+								<PACKAGE PID="2927" PackageName="30روزه(30) گیگ اینترنت ویژه ساعات افت مصرف +10 گیگ اینترنت رایگان 2الی 7 صبح" Price="100000" PricePaid="109000" Sort="6" />
+								<PACKAGE PID="2913" PackageName="30روزه (2+1) گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="105000" PricePaid="114450" Sort="6" />
+								<PACKAGE PID="2915" PackageName="30روزه (1.5) گیگ+5000 دقیقه تماس صوتی درون شبکه+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="125000" PricePaid="136250" Sort="6" />
+								<PACKAGE PID="2914" PackageName="30روزه(1.5+3) گیگ +10 گیگ اینترنت رایگان 2الی 7 صبح" Price="125000" PricePaid="136250" Sort="6" />
+								<PACKAGE PID="3047" PackageName="30 روزه (2.5 +5)گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="155000" PricePaid="168950" Sort="6" />
+								<PACKAGE PID="2917" PackageName="30 روزه(3 +6) گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="165000" PricePaid="179850" Sort="6" />
+								<PACKAGE PID="3046" PackageName="30 روزه 3.5گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="175000" PricePaid="190750" Sort="6" />
+								<PACKAGE PID="3045" PackageName="30 روزه( 4.5 +9 )گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="195000" PricePaid="212550" Sort="6" />
+								<PACKAGE PID="2920" PackageName="30 روزه( 7 + 14 )گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="245000" PricePaid="267050" Sort="6" />
+								<PACKAGE PID="2921" PackageName="30 روزه 8 گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="265000" PricePaid="288850" Sort="6" />
+								<PACKAGE PID="2922" PackageName="30روزه(10+10) گیگ +10 گیگ اینترنت رایگان 2الی 7 صبح" Price="295000" PricePaid="321550" Sort="6" />
+								<PACKAGE PID="2923" PackageName="30روزه(24+12) گیگ +10 گیگ اینترنت رایگان 2الی 7 صبح" Price="325000" PricePaid="354250" Sort="6" />
+								<PACKAGE PID="2924" PackageName="30 روزه (24 + 48 )گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="490000" PricePaid="534100" Sort="6" />
+								<PACKAGE PID="2925" PackageName="30 روزه 30 گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="590000" PricePaid="643100" Sort="6" />
+							</GROUP>
+							<GROUP GID="11" GroupName="15روزه">
+								<PACKAGE PID="1694" PackageName="15 روزه (200 مگ)" Price="44000" PricePaid="47960" Sort="8" />
+								<PACKAGE PID="1695" PackageName="15روزه (12 گیگ) ویژه ساعات 6 تا 12 ظهر" Price="50000" PricePaid="54500" Sort="8" />
+								<PACKAGE PID="3021" PackageName="15 روزه 512 مگ" Price="70000" PricePaid="76300" Sort="8" />
+								<PACKAGE PID="1697" PackageName="15 روزه (1.5 گیگ)" Price="115000" PricePaid="125350" Sort="8" />
+								<PACKAGE PID="3022" PackageName="15 روزه 3 گیگ" Price="150000" PricePaid="163500" Sort="8" />
+								<PACKAGE PID="1698" PackageName="15 روزه (5 گیگ)" Price="175000" PricePaid="190750" Sort="8" />
+							</GROUP>
+							<GROUP GID="2" GroupName="هفتگی">
+								<PACKAGE PID="3020" PackageName="7 روزه 3 گیگ-ویژه ساعت افت مصرف" Price="15000" PricePaid="16350" Sort="10" />
+								<PACKAGE PID="3048" PackageName=" 7 روزه 3 گیگابایت-ویژه ساعت افت مصرف" Price="15000" PricePaid="16350" Sort="10" />
+								<PACKAGE PID="1684" PackageName="7 روزه (100 مگ)" Price="22000" PricePaid="23980" Sort="10" />
+								<PACKAGE PID="3018" PackageName="7 روزه(150+150) مگ" Price="35000" PricePaid="38150" Sort="10" />
+								<PACKAGE PID="1686" PackageName="7 روزه (200 مگ)" Price="40000" PricePaid="43600" Sort="10" />
+								<PACKAGE PID="3019" PackageName="7 روزه   300مگ" Price="52000" PricePaid="56680" Sort="10" />
+								<PACKAGE PID="1688" PackageName="7 روزه (600مگ+1گیگ)" Price="75000" PricePaid="81750" Sort="10" />
+								<PACKAGE PID="1689" PackageName="7 روزه (700 مگ)" Price="80000" PricePaid="87200" Sort="10" />
+								<PACKAGE PID="1690" PackageName="7 روزه (1.2+5گیگ)" Price="100000" PricePaid="109000" Sort="10" />
+								<PACKAGE PID="1691" PackageName="7 روزه (2.5+5 گیگ)" Price="125000" PricePaid="136250" Sort="10" />
+								<PACKAGE PID="1692" PackageName="7 روزه (3 گیگ)" Price="135000" PricePaid="147150" Sort="10" />
+								<PACKAGE PID="1693" PackageName="7روزه (3.5+3.5گیگ)" Price="150000" PricePaid="163500" Sort="10" />
+							</GROUP>
+							<GROUP GID="12" GroupName="3روزه">
+								<PACKAGE PID="1678" PackageName="3 روزه (300+600 مگ)" Price="50000" PricePaid="54500" Sort="11" />
+								<PACKAGE PID="1679" PackageName="3 روزه (350 مگ)" Price="52000" PricePaid="56680" Sort="11" />
+								<PACKAGE PID="1681" PackageName="3 روزه (400+800 مگ)" Price="60000" PricePaid="65400" Sort="11" />
+								<PACKAGE PID="1683" PackageName="3 روزه (3گیگ)" Price="110000" PricePaid="119900" Sort="11" />
+							</GROUP>
+							<GROUP GID="1" GroupName="روزانه">
+								<PACKAGE PID="3015" PackageName="1 روزه 40  مگ" Price="12000" PricePaid="13080" Sort="12" />
+								<PACKAGE PID="3016" PackageName="1 روزه (100+100)مگ" Price="21000" PricePaid="22890" Sort="12" />
+								<PACKAGE PID="1672" PackageName="1 روزه (150 مگ)" Price="23000" PricePaid="25070" Sort="12" />
+								<PACKAGE PID="1673" PackageName="1 روزه ( 200+300مگ)" Price="30000" PricePaid="32700" Sort="12" />
+								<PACKAGE PID="1674" PackageName="1 روزه (250 مگ)" Price="35000" PricePaid="38150" Sort="12" />
+								<PACKAGE PID="1675" PackageName="1 روزه ( 300+700 مگ)" Price="39000" PricePaid="42510" Sort="12" />
+								<PACKAGE PID="3017" PackageName="1 روزه 1.2 گیگ" Price="64000" PricePaid="69760" Sort="12" />
+								<PACKAGE PID="1677" PackageName="1 روزه (3 گیگ)" Price="90000" PricePaid="98100" Sort="12" />
+							</GROUP>
+							<GROUP GID="93" GroupName="حجمی">
+								<PACKAGE PID="679" PackageName="حجم افزایشی (1گیگ)" Price="70000" PricePaid="76300" Sort="999" />
+								<PACKAGE PID="680" PackageName="حجم افزایشی (2گیگ)" Price="100000" PricePaid="109000" Sort="999" />
+								<PACKAGE PID="681" PackageName="حجم افزایشی (5گیگ)" Price="190000" PricePaid="207100" Sort="999" />
+							</GROUP>
+						</SimCard>
+						<SimCard SID="8" SIMCardTypeName="دیتا">
+							<GROUP GID="54" GroupName="یکساله">
+								<PACKAGE PID="3005" PackageName="365روزه(10)  گیگ +150 گیگ اینترنت رایگان 2الی 7 صبح" Price="520000" PricePaid="566800" Sort="0" />
+								<PACKAGE PID="3006" PackageName="365روزه(74)  گیگ +150 گیگ اینترنت رایگان 2الی 7 صبح" Price="1550000" PricePaid="1689500" Sort="0" />
+								<PACKAGE PID="3007" PackageName="365روزه(200)  گیگ +150 گیگ اینترنت رایگان 2الی 7 صبح" Price="3990000" PricePaid="4349100" Sort="0" />
+							</GROUP>
+							<GROUP GID="10" GroupName="6ماهه">
+								<PACKAGE PID="3001" PackageName="180روزه(18+18)  گیگ +80 گیگ اینترنت رایگان 2الی 7 صبح" Price="580000" PricePaid="632200" Sort="1" />
+								<PACKAGE PID="3002" PackageName="180روزه(42+42)  گیگ +80 گیگ اینترنت رایگان 2الی 7 صبح" Price="990000" PricePaid="1079100" Sort="1" />
+								<PACKAGE PID="3003" PackageName="180 روزه(60 + 60)گیگ+80 گیگ اینترنت رایگان 2الی 7 صبح" Price="1390000" PricePaid="1515100" Sort="1" />
+								<PACKAGE PID="3004" PackageName="180روزه(100+100)  گیگ +80 گیگ اینترنت رایگان 2الی 7 صبح" Price="1990000" PricePaid="2169100" Sort="1" />
+							</GROUP>
+							<GROUP GID="9" GroupName="3ماهه">
+								<PACKAGE PID="2996" PackageName="90روزه(4)  گیگ +40 گیگ اینترنت رایگان 2الی 7 صبح" Price="240000" PricePaid="261600" Sort="3" />
+								<PACKAGE PID="2997" PackageName="90روزه(9+9)  گیگ +40 گیگ اینترنت رایگان 2الی 7 صبح" Price="320000" PricePaid="348800" Sort="3" />
+								<PACKAGE PID="2998" PackageName="90 روزه( 15+ 15) گیگ+40 گیگ اینترنت رایگان 2الی 7 صبح" Price="430000" PricePaid="468700" Sort="3" />
+								<PACKAGE PID="2999" PackageName="90 روزه (21+ 21)گیگ+40 گیگ اینترنت رایگان 2الی 7 صبح" Price="530000" PricePaid="577700" Sort="3" />
+								<PACKAGE PID="3000" PackageName="90 روزه (36 + 36)گیگ+40 گیگ اینترنت رایگان 2الی 7 صبح" Price="790000" PricePaid="861100" Sort="3" />
+							</GROUP>
+							<GROUP GID="3" GroupName="ماهانه">
+								<PACKAGE PID="2993" PackageName="30 روزه 3 گیگ- ویژه ساعات افت مصرف+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="30000" PricePaid="32700" Sort="6" />
+								<PACKAGE PID="2980" PackageName="30روزه (200+200)  مگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="55000" PricePaid="59950" Sort="6" />
+								<PACKAGE PID="2981" PackageName="30 روزه 300  مگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="59000" PricePaid="64310" Sort="6" />
+								<PACKAGE PID="2994" PackageName="30روزه(20)  گیگ اینترنت ویژه ساعات افت مصرف +10 گیگ اینترنت رایگان 2الی 7 صبح" Price="70000" PricePaid="76300" Sort="6" />
+								<PACKAGE PID="2995" PackageName="30روزه(30)  گیگ اینترنت ویژه ساعات افت مصرف +10 گیگ اینترنت رایگان 2الی 7 صبح" Price="100000" PricePaid="109000" Sort="6" />
+								<PACKAGE PID="2982" PackageName="30روزه (2+1)  گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="105000" PricePaid="114450" Sort="6" />
+								<PACKAGE PID="2983" PackageName="30روزه (3+1.5)  گیگ +10 گیگ اینترنت رایگان 2الی 7 صبح" Price="125000" PricePaid="136250" Sort="6" />
+								<PACKAGE PID="3041" PackageName="30 روزه (2.5 +5)گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="155000" PricePaid="168950" Sort="6" />
+								<PACKAGE PID="2985" PackageName="30 روزه(3 +6) گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="165000" PricePaid="179850" Sort="6" />
+								<PACKAGE PID="3040" PackageName="30 روزه 3.5گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="175000" PricePaid="190750" Sort="6" />
+								<PACKAGE PID="3039" PackageName="30 روزه( 4.5 +9 )گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="195000" PricePaid="212550" Sort="6" />
+								<PACKAGE PID="2988" PackageName="30 روزه( 7 + 14 )گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="245000" PricePaid="267050" Sort="6" />
+								<PACKAGE PID="2989" PackageName="30 روزه 8 گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="265000" PricePaid="288850" Sort="6" />
+								<PACKAGE PID="2990" PackageName="30روزه(24+12)  گیگ +10 گیگ اینترنت رایگان 2الی 7 صبح" Price="325000" PricePaid="354250" Sort="6" />
+								<PACKAGE PID="2991" PackageName="30 روزه (24 + 48)گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="490000" PricePaid="534100" Sort="6" />
+								<PACKAGE PID="2992" PackageName="30 روزه 30 گیگ+10 گیگ اینترنت رایگان 2الی 7 صبح" Price="590000" PricePaid="643100" Sort="6" />
+							</GROUP>
+							<GROUP GID="11" GroupName="15روزه">
+								<PACKAGE PID="1758" PackageName="15 روزه (200 مگ)" Price="44000" PricePaid="47960" Sort="8" />
+								<PACKAGE PID="1759" PackageName="15روزه (12 گیگ) ویژه ساعات 6 تا 12 ظهر" Price="50000" PricePaid="54500" Sort="8" />
+								<PACKAGE PID="3037" PackageName="15 روزه 512 مگ" Price="70000" PricePaid="76300" Sort="8" />
+								<PACKAGE PID="1761" PackageName="15 روزه (1.5 گیگ)" Price="115000" PricePaid="125350" Sort="8" />
+								<PACKAGE PID="3038" PackageName="15 روزه 3 گیگ" Price="150000" PricePaid="163500" Sort="8" />
+								<PACKAGE PID="1763" PackageName="15 روزه (5 گیگ)" Price="175000" PricePaid="190750" Sort="8" />
+							</GROUP>
+							<GROUP GID="2" GroupName="هفتگی">
+								<PACKAGE PID="3036" PackageName="7 روزه 3 گیگ-ویژه ساعت افت مصرف" Price="15000" PricePaid="16350" Sort="10" />
+								<PACKAGE PID="1748" PackageName="7 روزه (100 مگ)" Price="22000" PricePaid="23980" Sort="10" />
+								<PACKAGE PID="3034" PackageName="7 روزه(150+150) مگ" Price="35000" PricePaid="38150" Sort="10" />
+								<PACKAGE PID="1750" PackageName="7 روزه (200 مگ)" Price="40000" PricePaid="43600" Sort="10" />
+								<PACKAGE PID="3035" PackageName="7 روزه   300مگ" Price="52000" PricePaid="56680" Sort="10" />
+								<PACKAGE PID="1752" PackageName="7 روزه (600مگ+1گیگ)" Price="75000" PricePaid="81750" Sort="10" />
+								<PACKAGE PID="1753" PackageName="7 روزه (700 مگ)" Price="80000" PricePaid="87200" Sort="10" />
+								<PACKAGE PID="1754" PackageName="7 روزه (1.2+5گیگ)" Price="100000" PricePaid="109000" Sort="10" />
+								<PACKAGE PID="1755" PackageName="7 روزه (2.5+5 گیگ)" Price="125000" PricePaid="136250" Sort="10" />
+								<PACKAGE PID="1756" PackageName="7 روزه (3 گیگ)" Price="135000" PricePaid="147150" Sort="10" />
+								<PACKAGE PID="1757" PackageName="7روزه (3.5+3.5گیگ)" Price="150000" PricePaid="163500" Sort="10" />
+							</GROUP>
+							<GROUP GID="12" GroupName="3روزه">
+								<PACKAGE PID="1742" PackageName="3 روزه (300+600 مگ)" Price="50000" PricePaid="54500" Sort="11" />
+								<PACKAGE PID="1743" PackageName="3 روزه (350 مگ)" Price="52000" PricePaid="56680" Sort="11" />
+								<PACKAGE PID="1745" PackageName="3 روزه (400+800 مگ)" Price="60000" PricePaid="65400" Sort="11" />
+								<PACKAGE PID="1747" PackageName="3 روزه (3گیگ)" Price="110000" PricePaid="119900" Sort="11" />
+							</GROUP>
+							<GROUP GID="1" GroupName="روزانه">
+								<PACKAGE PID="3031" PackageName="1 روزه 40  مگ" Price="12000" PricePaid="13080" Sort="12" />
+								<PACKAGE PID="3032" PackageName="1 روزه(100+100)مگ" Price="21000" PricePaid="22890" Sort="12" />
+								<PACKAGE PID="1736" PackageName="1 روزه (150 مگ)" Price="23000" PricePaid="25070" Sort="12" />
+								<PACKAGE PID="1737" PackageName="1 روزه ( 200+300مگ)" Price="30000" PricePaid="32700" Sort="12" />
+								<PACKAGE PID="1738" PackageName="1 روزه (250 مگ)" Price="35000" PricePaid="38150" Sort="12" />
+								<PACKAGE PID="1739" PackageName="1 روزه ( 300+700 مگ)" Price="39000" PricePaid="42510" Sort="12" />
+								<PACKAGE PID="1764" PackageName="10 روزه ( 350 مگ)" Price="60000" PricePaid="65400" Sort="12" />
+								<PACKAGE PID="3033" PackageName="1 روزه 1.2 گیگ" Price="64000" PricePaid="69760" Sort="12" />
+								<PACKAGE PID="1741" PackageName="1 روزه (3 گیگ)" Price="90000" PricePaid="98100" Sort="12" />
+							</GROUP>
+							<GROUP GID="93" GroupName="حجمی">
+								<PACKAGE PID="738" PackageName="حجم افزایشی (1گیگ)" Price="70000" PricePaid="76300" Sort="999" />
+								<PACKAGE PID="739" PackageName="حجم افزایشی (2گیگ)" Price="100000" PricePaid="109000" Sort="999" />
+								<PACKAGE PID="740" PackageName="حجم افزایشی (5گیگ)" Price="190000" PricePaid="207100" Sort="999" />
+							</GROUP>
+						</SimCard>
+					</PIN>
+				</PINs>
+			</Operator>
+			<Operator OID="BILL" Logo="http://core.eways.ir/CoreImages/Operators/BILL.jpg">
+				<Name language="fa-IR">پرداخت قبض</Name>
+				<Name language="en-US">BILL</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="PARSONLINE" Logo="http://core.eways.ir/CoreImages/Operators/PARSONLINE.jpg">
+				<Name language="fa-IR">پارس آنلاین</Name>
+				<Name language="en-US">PARSONLINE</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="BITDEFENDER" Logo="http://core.eways.ir/CoreImages/Operators/BITDEFENDER.jpg">
+				<Name language="fa-IR">بیت دیفندر</Name>
+				<Name language="en-US">BITDEFENDER</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="IN" Logo="http://core.eways.ir/CoreImages/Operators/IN.jpg">
+				<Name language="fa-IR">شبکه هوشمند</Name>
+				<Name language="en-US">IN</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="MIN" Logo="http://core.eways.ir/CoreImages/Operator/MIN.jpg">
+				<Name language="fa-IR">شبکه هوشمند مشهد</Name>
+				<Name language="en-US">MIN</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="MOBILE_ESET" Logo="http://core.eways.ir/CoreImages/Operator/MOBILE_ESET.jpg">
+				<Name language="fa-IR">آنتی ویروس موبایلی Eset</Name>
+				<Name language="en-US">MOBILE_ESET</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="MOBILE_BITDEFENDER" Logo="http://core.eways.ir/CoreImages/Operator/MOBILE_BITDEFENDER.jpg">
+				<Name language="fa-IR">بیت دیفندر موبایلی</Name>
+				<Name language="en-US">MOBILE_BITDEFENDER</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="INTERNATIONALCARD_AFGHAN" Logo="http://core.eways.ir/CoreImages/Operator/AFGHANCARD.jpg">
+				<Name language="fa-IR">افغان کارت</Name>
+				<Name language="en-US">INTERNATIONALCARD_AFGHAN</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="AVAST" Logo="http://core.eways.ir/CoreImages/Operator/AVAST.jpg">
+				<Name language="fa-IR">انتی ویروس Avast</Name>
+				<Name language="en-US">AVAST</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="SHEED" Logo="http://core.eways.ir/CoreImages/Operator/SHEED.jpg">
+				<Name language="fa-IR">انتی ویروس SHEED</Name>
+				<Name language="en-US">SHEED</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="GIFT_ITUNES" Logo="http://core.eways.ir/CoreImages/Operator/GIFT_ITUNES.jpg">
+				<Name language="fa-IR">گیفت آی تیونز</Name>
+				<Name language="en-US">GIFT_ITUNES</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="GIFT_GOOGLEPLAY" Logo="http://core.eways.ir/CoreImages/Operator/GIFT_GOOGLEPLAY.jpg">
+				<Name language="fa-IR">گیفت گوگل پلی</Name>
+				<Name language="en-US">GIFT_GOOGLEPLAY</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="GIFT_XBOX" Logo="http://core.eways.ir/CoreImages/Operator/GIFT_XBOX.jpg">
+				<Name language="fa-IR">گیفت ایکس باکس</Name>
+				<Name language="en-US">GIFT_XBOX</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="GIFT_AMAZON" Logo="http://core.eways.ir/CoreImages/Operator/GIFT_AMAZON.jpg">
+				<Name language="fa-IR">گیفت آمازون</Name>
+				<Name language="en-US">GIFT_AMAZON</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="GIFT_PLAYSTATION" Logo="http://core.eways.ir/CoreImages/Operator/GIFT_PLAYSTATION.jpg">
+				<Name language="fa-IR">گیفت پلی استیشن</Name>
+				<Name language="en-US">GIFT_PLAYSTATION</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="GIFT_MICROSOFT" Logo="http://core.eways.ir/CoreImages/Operator/GIFT_MICROSOFT.jpg">
+				<Name language="fa-IR">گیفت مایکروسافت</Name>
+				<Name language="en-US">GIFT_MICROSOFT</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="GIFT_PLAYSTATIONPLUS" Logo="http://core.eways.ir/CoreImages/Operator/GIFT_PLAYSTATIONPLUS.jpg">
+				<Name language="fa-IR">گیفت پلی استیشن پلاس</Name>
+				<Name language="en-US">GIFT_PLAYSTATIONPLUS</Name>
+				<PINs />
+			</Operator>
+			<Operator OID="SamanBillPGO" Logo="http://core.eways.ir/CoreImages/Operators/SamanBillPGO.jpg">
+				<Name language="fa-IR">قبض</Name>
+				<Name language="en-US">SamanBillPGO</Name>
+				<PINs>
+					<PIN Price="1200" available="1" isWholeSale="0">
+						<CID>261</CID>
+						<PersianTitle>قبض آب گروهی </PersianTitle>
+					</PIN>
+					<PIN Price="1200" available="1" isWholeSale="0">
+						<CID>262</CID>
+						<PersianTitle>قبض برق گروهی </PersianTitle>
+					</PIN>
+					<PIN Price="1200" available="1" isWholeSale="0">
+						<CID>263</CID>
+						<PersianTitle>قبض گاز گروهی </PersianTitle>
+					</PIN>
+					<PIN Price="1200" available="1" isWholeSale="0">
+						<CID>264</CID>
+						<PersianTitle>قبض تلفن ثابت گروهی </PersianTitle>
+					</PIN>
+					<PIN Price="1200" available="1" isWholeSale="0">
+						<CID>265</CID>
+						<PersianTitle>قبض موبایل گروهی </PersianTitle>
+					</PIN>
+					<PIN Price="1200" available="1" isWholeSale="0">
+						<CID>266</CID>
+						<PersianTitle>قبض شهرداری گروهی </PersianTitle>
+					</PIN>
+					<PIN Price="0" available="1" isWholeSale="0">
+						<CID>269</CID>
+						<PersianTitle>قبض ناجا گروهی </PersianTitle>
+					</PIN>
+				</PINs>
+			</Operator>
+			<Operator OID="Travel" Logo="http://core.eways.ir/CoreImages/Operator/Travel.jpg">
+				<Name language="fa-IR">گردشگری</Name>
+				<Name language="en-US">Travel</Name>
+				<PINs>
+					<PIN Price="1" available="1" isWholeSale="0">
+						<CID>110</CID>
+						<PersianTitle>بلیط اتوبوس</PersianTitle>
+					</PIN>
+					<PIN Price="1" available="1" isWholeSale="0">
+						<CID>120</CID>
+						<PersianTitle>بليط هواپيما سيستمي داخلي</PersianTitle>
+					</PIN>
+					<PIN Price="1" available="1" isWholeSale="0">
+						<CID>119</CID>
+						<PersianTitle>بلیط هواپیما سیستمی خارجی</PersianTitle>
+					</PIN>
+					<PIN Price="1" available="1" isWholeSale="0">
+						<CID>118</CID>
+						<PersianTitle>بلیط هواپیما چارتر</PersianTitle>
+					</PIN>
+					<PIN Price="1" available="1" isWholeSale="0">
+						<CID>111</CID>
+						<PersianTitle>بلیط قطار</PersianTitle>
+					</PIN>
+				</PINs>
+			</Operator>
+			<Operator OID="Post" Logo="http://core.eways.ir/CoreImages/Operator/Post.jpg">
+				<Name language="fa-IR">پست</Name>
+				<Name language="en-US">Post</Name>
+				<PINs>
+					<PIN Price="17440" available="1" isWholeSale="0">
+						<CID>121</CID>
+						<PersianTitle>نشاني با کد پستي</PersianTitle>
+						<EnglishTitle>AddressByPostCode</EnglishTitle>
+					</PIN>
+				</PINs>
+			</Operator>
+			<Operator OID="Insurance" Logo="http://core.eways.ir/CoreImages/Operator/Insurance.jpg">
+				<Name language="fa-IR">بیمه</Name>
+				<Name language="en-US">Insurance</Name>
+				<PINs>
+					<PIN Price="1" available="1" isWholeSale="0">
+						<CID>610</CID>
+						<PersianTitle>بیمه شخص ثالث</PersianTitle>
+						<EnglishTitle>ThirdParty Insurance</EnglishTitle>
+					</PIN>
+					<PIN Price="1" available="1" isWholeSale="0">
+						<CID>611</CID>
+						<PersianTitle>بيمه درمان انفرادي</PersianTitle>
+						<EnglishTitle>Treatment Insurance</EnglishTitle>
+					</PIN>
+					<PIN Price="1" available="1" isWholeSale="0">
+						<CID>612</CID>
+						<PersianTitle>بيمه آتش سوزي</PersianTitle>
+						<EnglishTitle>Fire Insurance</EnglishTitle>
+					</PIN>
+					<PIN Price="1" available="1" isWholeSale="0">
+						<CID>613</CID>
+						<PersianTitle>بيمه بدنه</PersianTitle>
+						<EnglishTitle>Auto Insurance</EnglishTitle>
+					</PIN>
+					<PIN Price="1" available="1" isWholeSale="0">
+						<CID>614</CID>
+						<PersianTitle>بيمه مسوليت پزشکي</PersianTitle>
+						<EnglishTitle>Doctor Insurance</EnglishTitle>
+					</PIN>
+					<PIN Price="1" available="1" isWholeSale="0">
+						<CID>615</CID>
+						<PersianTitle>بيمه زلزله</PersianTitle>
+						<EnglishTitle>EarthQuake Insurance</EnglishTitle>
+					</PIN>
+					<PIN Price="1" available="1" isWholeSale="0">
+						<CID>616</CID>
+						<PersianTitle>بيمه مسافرتي</PersianTitle>
+						<EnglishTitle>Travel Insurance</EnglishTitle>
+					</PIN>
+				</PINs>
+			</Operator>
+			<Operator OID="Stolen" Logo="http://core.eways.ir/CoreImages/Operators/Stolen.jpg">
+				<Name language="fa-IR">مفقودی</Name>
+				<Name language="en-US">Stolen</Name>
+				<PINs>
+					<PIN Price="125000" available="1" isWholeSale="0">
+						<CID>640</CID>
+						<PersianTitle>اعلام مفقودی یا سرقتی</PersianTitle>
+						<EnglishTitle>Register Stolen</EnglishTitle>
+						<BasePrice>125000</BasePrice>
+						<TotalPrice>125000</TotalPrice>
+						<Type>Base</Type>
+					</PIN>
+					<PIN Price="235000" available="1" isWholeSale="0">
+						<CID>646</CID>
+						<PersianTitle>اعلام مفقودي يا سرقتي با دوره رديابي 45 روزه</PersianTitle>
+						<EnglishTitle>Register Stolen with 45 day tarcking</EnglishTitle>
+						<BasePrice>125000</BasePrice>
+						<TotalPrice>235000</TotalPrice>
+						<Type>Buy</Type>
+					</PIN>
+					<PIN Price="285000" available="1" isWholeSale="0">
+						<CID>647</CID>
+						<PersianTitle>اعلام مفقودي يا سرقتي با دوره رديابي 45 روزه براي دو سیم کارت</PersianTitle>
+						<EnglishTitle>Register Stolen with 45 day tarcking for two IMEI</EnglishTitle>
+						<BasePrice>125000</BasePrice>
+						<TotalPrice>285000</TotalPrice>
+						<Type>BuyTwoImei</Type>
+					</PIN>
+					<PIN Price="110000" available="1" isWholeSale="0">
+						<CID>648</CID>
+						<PersianTitle>تمديد 45 روزه دوره رديابي اعلان مفقودي يا سرقتي</PersianTitle>
+						<EnglishTitle>Extent 45 day taracking day for register stolen</EnglishTitle>
+						<BasePrice>125000</BasePrice>
+						<TotalPrice>110000</TotalPrice>
+						<Type>Extend</Type>
+					</PIN>
+					<PIN Price="160000" available="1" isWholeSale="0">
+						<CID>649</CID>
+						<PersianTitle>تمديد 45 روزه دوره رديابي براي دو سيم کارت</PersianTitle>
+						<EnglishTitle>Extent 45 day taracking day for two IMEI</EnglishTitle>
+						<BasePrice>125000</BasePrice>
+						<TotalPrice>160000</TotalPrice>
+						<Type>ExtentTwoImei</Type>
+					</PIN>
+				</PINs>
+			</Operator>
+			<Operator OID="SocialMessaging" Logo="http://core.eways.ir/CoreImages/Operators/SocialMessaging.jpg">
+				<Name language="fa-IR">پیامک</Name>
+				<Name language="en-US">SocialMessaging</Name>
+				<PINs>
+					<PIN Price="2000" available="1" isWholeSale="0">
+						<CID>561</CID>
+						<PersianTitle>بسته 10 پیامک تلفن همراه</PersianTitle>
+						<Logo>10</Logo>
+					</PIN>
+					<PIN Price="17000" available="1" isWholeSale="0">
+						<CID>562</CID>
+						<PersianTitle>بسته 100 پیامک تلفن همراه</PersianTitle>
+						<Logo>100</Logo>
+					</PIN>
+					<PIN Price="80000" available="1" isWholeSale="0">
+						<CID>563</CID>
+						<PersianTitle>بسته 500 پیامک تلفن همراه</PersianTitle>
+						<Logo>500</Logo>
+					</PIN>
+					<PIN Price="154000" available="1" isWholeSale="0">
+						<CID>564</CID>
+						<PersianTitle>بسته 1000 پیامک تلفن همراه</PersianTitle>
+						<Logo>1000</Logo>
+					</PIN>
+				</PINs>
+			</Operator>
+		</Products>
+		<Banks>
+			<GateWay>
+				<GID>18</GID>
+				<Name Language="fa-IR">پارسیان</Name>
+				<Name Language="en-US">ParsianB2C_2&amp;ChargeAffiliate</Name>
+				<Logo>http://core.eways.ir/COREIMAGES/parsian.PNG</Logo>
+				<Type>2</Type>
+			</GateWay>
+		</Banks>
+		<CallCenter>021-64004</CallCenter>
+		<Tax>0.9</Tax>
+		<UserID>435</UserID>
+		<RequestInfo>
+			<Version>1.0</Version>
+			<IP>151.240.248.237</IP>
+		</RequestInfo>
+		<SiteSetting>
+			<HeaderName>فروشگاه شارژ کاکتوس</HeaderName>
+			<IsSalePhysical>0</IsSalePhysical>
+			<BackGroundColor>#ffffff</BackGroundColor>
+			<DefaultBank>0</DefaultBank>
+			<MetaTag>&lt;meta name="keywords" content="شارژ,شارژ رایگان,شارژ 500 تومنی,شارژ پانصد تومانی,شارژ صد هزار تومانی,شارژ مستقیم رایتل,شارژ مستقیم همراه اول,شارژ مستقیم ایرانسل,شارژ با نرخ دولتی,شارژ عمده,فروش شارژ,شارژ زیر قیمت,شارژ ارزان,    " /&gt;</MetaTag>
+			<MetaTag>&lt;meta name="description" content="سیستم شارژ کاکتوس    " /&gt;</MetaTag>
+			<TemplateName>bahman</TemplateName>
+			<MailSupport>13H1_15b48@ChargeSupport.ir</MailSupport>
+			<TemplateName>bahman</TemplateName>
+			<SiteName>فروشگاه</SiteName>
+		</SiteSetting>
+		<IsSalePhysical>0</IsSalePhysical>
+	</Eways>

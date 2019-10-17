@@ -62,11 +62,11 @@ class BillGenerator {
                 multiplier = 2
         }
         val remainder = (sum % 11)
-        var returnValue = -1
-        if (remainder == 0 || remainder == 1) {
-            returnValue = 0
+        val returnValue: Int
+        returnValue = if (remainder == 0 || remainder == 1) {
+            0
         } else {
-            returnValue = 11 - remainder
+            11 - remainder
         }
         return returnValue
     }

@@ -1,6 +1,6 @@
 package io.github.protelco
 
-class Loggy {
+object LogUtils {
     fun beginSection(tag : String) {
         println("$tag ----------------------------------------------------------")
     }

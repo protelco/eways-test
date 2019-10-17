@@ -4,28 +4,32 @@ import io.github.the724.IrBill
 import kotlin.random.Random
 
 fun main() {
-    val loggy = Loggy()
 
     // 1. get billId and paymentId
-    loggy.beginSection("1-CREATE RANDOM BILL")
+    LogUtils.beginSection("1-CREATE RANDOM BILL")
 
     val caseNumber = Random(System.currentTimeMillis()).nextInt(1366923)
-    val randomBill = BillGenerator().newBill(1, 310, 1, 1, caseNumber, 1000.0, false)
+    val randomBill = BillGenerator().newBill(8, 310, 1, 1, caseNumber, 1000.0, false)
     val validatedBill = IrBill.parseBillData(randomBill.billId, randomBill.paymentId)
 
-    loggy.log("generated bill data")
-    loggy.log(validatedBill.toString())
+    LogUtils.log("generated bill data")
+    LogUtils.log(validatedBill.toString())
 
     if (validatedBill != null &&
             IrBill.validateBillId(randomBill.billId) &&
             IrBill.validatePaymentId(randomBill.billId, randomBill.paymentId)) {
 
         // 2. create transaction id and save in log file
-        loggy.beginSection("2- CREATE TRANSACTION ID")
-        val transactionId = Random(System.currentTimeMillis()).nextInt()
-        loggy.log("Transaction id : $transactionId")
+        LogUtils.beginSection("2- CREATE TRANSACTION ID")
+        var transactionId = Random(System.currentTimeMillis()).nextInt(1366923)
+        if (transactionId < 0) {
+            transactionId *= -1
+        }
+        LogUtils.log("Transaction id : $transactionId")
 
         // 3. get UUID from eways server and save in log file
+        val getProductResult = GetUUIDSoapWrapper().call(transactionId.toString())
+        LogUtils.log(getProductResult.toString())
 
         // 4. call request bill to pay the bill and save the response in log file
 
@@ -33,7 +37,7 @@ fun main() {
 
         // 6. call
     } else {
-        loggy.beginSection("Error happened")
-        loggy.log("random bill validation failed")
+        LogUtils.beginSection("Error happened")
+        LogUtils.log("random bill validation failed")
     }
 }
