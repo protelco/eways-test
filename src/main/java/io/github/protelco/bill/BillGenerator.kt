@@ -1,4 +1,4 @@
-package io.github.protelco
+package io.github.protelco.bill
 
 data class RandomBill(val billId: String, val paymentId: String)
 

@@ -1,5 +1,7 @@
-package io.github.protelco
+package io.github.protelco.eways
 
+import io.github.protelco.eways.SoapWrapper.Companion.configsList
+import io.github.protelco.utils.LogUtils
 import org.ksoap2.SoapEnvelope
 import org.ksoap2.serialization.SoapObject
 import org.ksoap2.serialization.SoapSerializationEnvelope
@@ -9,7 +11,7 @@ import java.io.ByteArrayInputStream
 import java.nio.charset.Charset
 import javax.xml.parsers.DocumentBuilderFactory
 
-class GetProductSoapWrapper : SoapWrapper() {
+class GetProduct {
 
     companion object {
         private val URL = configsList[0].url

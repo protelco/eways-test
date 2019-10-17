@@ -1,5 +1,9 @@
 package io.github.protelco
 
+import io.github.protelco.bill.BillGenerator
+import io.github.protelco.eways.GetProduct
+import io.github.protelco.eways.RequestBill
+import io.github.protelco.utils.LogUtils
 import io.github.the724.IrBill
 import kotlin.random.Random
 
@@ -32,11 +36,11 @@ fun main() {
         LogUtils.log("Transaction id : $transactionId")
 
         // 3. get UUID from eways server and save in log file
-        val getProductResult = GetProductSoapWrapper().call(transactionId.toString())
+        val getProductResult = GetProduct().call(transactionId.toString())
         LogUtils.log(getProductResult.toString())
 
         // 4. call request bill to pay the bill and save the response in log file
-        val requestBillResult = RequestBillSoapWrapper().call()
+        val requestBillResult = RequestBill().call()
 
         // 5. read the log file and call get status to show the result
 

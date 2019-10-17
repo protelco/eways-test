@@ -1,4 +1,4 @@
-package io.github.protelco
+package io.github.protelco.utils
 
 object LogUtils {
     fun beginSection(tag : String) {

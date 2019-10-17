@@ -1,4 +1,4 @@
-package io.github.protelco
+package io.github.protelco.eways
 
 import com.google.gson.Gson
 import java.io.BufferedReader

@@ -3,5 +3,6 @@
 /.gradle
 /out
 /build
+samples
 local.properties
 configs.json
