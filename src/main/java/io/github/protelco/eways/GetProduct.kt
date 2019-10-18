@@ -22,7 +22,6 @@ class GetProduct {
     }
 
     fun call(transactionId: String): GetProductResult {
-
         val request = SoapObject(NAMESPACE, METHOD_NAME)
         request.addProperty("TransactionID", transactionId)
         request.addProperty("UserName", USER_NAME)

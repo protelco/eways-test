@@ -1,6 +1,10 @@
 package io.github.protelco.eways
 
 import io.github.protelco.eways.SoapWrapper.Companion.configsList
+import org.ksoap2.SoapEnvelope
+import org.ksoap2.serialization.SoapObject
+import org.ksoap2.serialization.SoapSerializationEnvelope
+import org.ksoap2.transport.HttpTransportSE
 
 class RequestBill {
 
@@ -12,6 +16,20 @@ class RequestBill {
         private val USER_NAME = configsList[1].userName
     }
 
-    fun call() {
+    fun call(requestId: String, billId: String, payId: String, optionalParam: String = "") {
+        val request = SoapObject(NAMESPACE, METHOD_NAME)
+        request.addProperty("RequestID", requestId)
+        request.addProperty("SitePassword", USER_NAME)
+        request.addProperty("BIllID", billId)
+        request.addProperty("PayID", payId)
+        request.addProperty("OptionalParam", optionalParam)
+
+        val envelope = SoapSerializationEnvelope(SoapEnvelope.VER11)
+        envelope.implicitTypes = true
+        envelope.setOutputSoapObject(request)
+        envelope.dotNet = true
+
+        val httpTransport = HttpTransportSE(URL)
+        httpTransport.debug = true
     }
 }
