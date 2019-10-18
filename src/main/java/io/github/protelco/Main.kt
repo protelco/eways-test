@@ -40,7 +40,7 @@ fun main() {
         LogUtils.log(getProductResult.toString())
 
         // 4. call request bill to pay the bill and save the response in log file
-        val requestBillResult = RequestBill().call()
+        RequestBill().call(getProductResult.uuid, randomBill.billId, randomBill.paymentId, transactionId.toString())
 
         // 5. read the log file and call get status to show the result
 

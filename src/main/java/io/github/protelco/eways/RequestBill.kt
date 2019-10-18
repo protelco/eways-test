@@ -1,6 +1,7 @@
 package io.github.protelco.eways
 
 import io.github.protelco.eways.SoapWrapper.Companion.configsList
+import io.github.protelco.utils.LogUtils
 import org.ksoap2.SoapEnvelope
 import org.ksoap2.serialization.SoapObject
 import org.ksoap2.serialization.SoapSerializationEnvelope
@@ -31,5 +32,29 @@ class RequestBill {
 
         val httpTransport = HttpTransportSE(URL)
         httpTransport.debug = true
+
+        var status = ""
+        var message = ""
+
+       try {
+
+           LogUtils.log("request RequestBill")
+           httpTransport.call(SOAP_ACTION, envelope)
+           LogUtils.log("Getting response of RequestBill")
+           val response: SoapObject = envelope.response as SoapObject
+
+           for(i in 0 until response.propertyCount) {
+               LogUtils.log(response.getProperty(i).toString())
+           }
+
+        } catch (e : Exception) {
+           LogUtils.log(e.localizedMessage)
+        }
     }
+
+    fun parseResult(xmlResponse : String) {
+
+    }
+
+    data class RequestBillResult(val status : String = "", var message : String = "")
 }
